@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/01/27 09:41:52.000.935,C:\Users\Breno\Daemun\Prontos\Padrão\UMenu.dfm=C:\Users\Breno\Daemun\Prontos\Padrão\dxSkinEditorPreview.dfm</Transaction>
+    <Transaction>2011/01/27 09:41:52.000.935,C:\Users\Breno\Daemun\Prontos\Padrão\UMenu.pas=C:\Users\Breno\Daemun\Prontos\Padrão\dxSkinEditorPreview.pas</Transaction>
+    <Transaction>2011/01/27 09:42:04.000.934,C:\Users\Breno\Daemun\Prontos\Padrão\UDmMenu.dfm=C:\Users\Breno\Daemun\Prontos\Padrão\dxSkinEditorDM.dfm</Transaction>
+    <Transaction>2011/01/27 09:42:04.000.934,C:\Users\Breno\Daemun\Prontos\Padrão\UDmMenu.pas=C:\Users\Breno\Daemun\Prontos\Padrão\dxSkinEditorDM.pas</Transaction>
+    <Transaction>2011/01/27 09:43:08.000.750,C:\Users\Breno\Daemun\Prontos\Padrão\Projeto.dproj=C:\Users\Breno\Daemun\Prontos\Padrão\dxSkinsFeaturesDemo.dproj</Transaction>
+    <Transaction>2011/03/01 15:12:10.845,C:\Users\Breno\Daemun\KDerno\trunk\ kderno\KDerno.dproj=C:\Users\Breno\Daemun\KDerno\trunk\ kderno\Projeto.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
