@@ -1,10 +1,11 @@
-unit UDmMenu;
+unit UDmKDerno;
 
 interface
 
 uses
   SysUtils, Classes, DB, cxEditRepositoryItems, cxEdit, ImgList,
-  Controls, cxGraphics, dxSkinsCore, dxmdaset, cxSchedulerHolidays;
+  Controls, cxGraphics, dxSkinsCore, dxmdaset, cxSchedulerHolidays, DBXFirebird,
+  FMTBcd, SqlExpr;
 
 type
   TdmSkinEditor = class(TDataModule)
@@ -34,6 +35,11 @@ type
     mdsCarsPicture: TBlobField;
     mdsCarsPrice: TFloatField;
     cxSchedulerHolidays1: TcxSchedulerHolidays;
+    KDConnection: TSQLConnection;
+    TUsuario: TSQLQuery;
+    TUsuarioID_USUARIO: TIntegerField;
+    TUsuarioLOGIN: TStringField;
+    TUsuarioSENHA: TStringField;
   private
     { Private declarations }
   public

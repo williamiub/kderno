@@ -47,11 +47,14 @@
 			<DelphiCompile Include="KDerno.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
-			<DCCReference Include="UDmMenu.pas">
+			<DCCReference Include="UDmKDerno.pas">
 				<Form>TdmSkinEditor</Form>
 			</DCCReference>
 			<DCCReference Include="UMenu.pas">
 				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="USPlash.pas">
+				<Form>FSplash</Form>
 			</DCCReference>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>
