@@ -21768,6 +21768,7 @@ object FMenu: TFMenu
     TabOrder = 1
     TabStop = False
     object dxRibbonTab1: TdxRibbonTab
+      Active = True
       Caption = 'Standard'
       Groups = <
         item
@@ -21782,7 +21783,6 @@ object FMenu: TFMenu
       Index = 0
     end
     object dxRibbonTab2: TdxRibbonTab
-      Active = True
       Caption = 'Style Options'
       Groups = <
         item
@@ -21807,7 +21807,7 @@ object FMenu: TFMenu
     Top = 159
     Width = 864
     Height = 457
-    ActivePage = tsScheduler
+    ActivePage = tsGrid
     Align = alClient
     Images = ilGroupIcons
     PopupMenu = PopupMenu1
@@ -21819,10 +21819,6 @@ object FMenu: TFMenu
     object tsGrid: TcxTabSheet
       Caption = 'Grid'
       ImageIndex = 0
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Grid: TcxGrid
         Left = 0
         Top = 0
@@ -22209,15 +22205,11 @@ object FMenu: TFMenu
       Caption = 'PivotGrid'
       ImageIndex = 4
       OnResize = tsPivotGridResize
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object PreviewPivotGrid: TcxPivotGrid
         Left = 0
         Top = 0
         Width = 856
-        Height = 420
+        Height = 453
         Align = alClient
         Groups = <
           item
@@ -22225,6 +22217,7 @@ object FMenu: TFMenu
             Caption = 'FieldsGroup 1'
           end>
         TabOrder = 0
+        ExplicitHeight = 420
         object pgfPurchaseQuarter: TcxPivotGridField
           Area = faColumn
           AreaIndex = 0
@@ -22310,7 +22303,7 @@ object FMenu: TFMenu
         Left = 0
         Top = 0
         Width = 856
-        Height = 420
+        Height = 453
         ViewDay.Active = True
         Align = alClient
         ControlBox.Control = ControlBox
@@ -22327,17 +22320,19 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
+        ExplicitHeight = 420
         Splitters = {
-          C80200007E0000005703000083000000C302000001000000C8020000A3010000}
-        StoredClientBounds = {010000000100000057030000A3010000}
+          C80200007E0000005703000083000000C302000001000000C8020000C4010000}
+        StoredClientBounds = {010000000100000057030000C4010000}
         object ControlBox: TPanel
           Left = 0
           Top = 0
           Width = 143
-          Height = 288
+          Height = 321
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
+          ExplicitHeight = 288
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -22392,15 +22387,11 @@ object FMenu: TFMenu
     object tsTreeList: TcxTabSheet
       Caption = 'TreeList'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxTreeList1: TcxTreeList
         Left = 0
         Top = 0
         Width = 856
-        Height = 420
+        Height = 453
         Align = alClient
         Bands = <
           item
@@ -22414,6 +22405,7 @@ object FMenu: TFMenu
         OptionsView.Indicator = True
         Preview.Column = cxTreeList1cxTreeListColumn2
         TabOrder = 0
+        ExplicitHeight = 420
         Data = {
           00000500720200000F00000044617461436F6E74726F6C6C6572310400000012
           000000546378537472696E6756616C7565547970651200000054637853747269
@@ -22491,19 +22483,16 @@ object FMenu: TFMenu
     object tsVerticalGrid: TcxTabSheet
       Caption = 'VerticalGrid'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxVerticalGrid: TcxVerticalGrid
         Left = 0
         Top = 0
         Width = 856
-        Height = 420
+        Height = 453
         Align = alClient
         OptionsView.BandsInterval = 3
         OptionsView.RowHeaderWidth = 146
         TabOrder = 0
+        ExplicitHeight = 420
         Version = 1
         object cxVerticalGridEditorRow1: TcxEditorRow
           Properties.Caption = 'Caption'
@@ -22626,18 +22615,15 @@ object FMenu: TFMenu
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
         Width = 856
-        Height = 420
+        Height = 453
         Align = alClient
         TabOrder = 0
         TabStop = False
+        ExplicitHeight = 420
         object Image1: TImage
           Left = 364
           Top = 129
@@ -23620,10 +23606,6 @@ object FMenu: TFMenu
     object tsEditors: TcxTabSheet
       Caption = 'Editors'
       ImageIndex = 5
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object cxCheckGroup1: TcxCheckGroup
         Left = 8
         Top = 8
@@ -23851,10 +23833,6 @@ object FMenu: TFMenu
     object cxTabSheet1: TcxTabSheet
       Caption = 'Docking && NavBar'
       ImageIndex = 7
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       DesignSize = (
         856
         420)
@@ -23871,7 +23849,7 @@ object FMenu: TFMenu
           Left = 173
           Top = 0
           Width = 655
-          Height = 420
+          Height = 453
           DockType = 1
           OriginalWidth = 300
           OriginalHeight = 200
@@ -23879,7 +23857,7 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 655
-            Height = 420
+            Height = 453
             DockType = 1
             OriginalWidth = 300
             OriginalHeight = 200
@@ -23887,7 +23865,7 @@ object FMenu: TFMenu
               Left = 0
               Top = 0
               Width = 655
-              Height = 420
+              Height = 453
               DockType = 1
               OriginalWidth = 300
               OriginalHeight = 200
@@ -23896,7 +23874,7 @@ object FMenu: TFMenu
               Left = 0
               Top = 0
               Width = 655
-              Height = 420
+              Height = 453
               AllowFloating = True
               AutoHide = False
               Caption = 'Main'
@@ -23911,11 +23889,12 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 173
-            Height = 140
+            Height = 33
             Visible = False
             AllowFloating = True
             AutoHide = True
             Caption = 'NavBar: Explorer View'
+            ExplicitHeight = 0
             AutoHidePosition = 2
             DockType = 4
             OriginalWidth = 173
@@ -23923,13 +23902,15 @@ object FMenu: TFMenu
             object dxNavPane: TdxNavBar
               Left = 0
               Top = 0
-              Width = 173
-              Height = 140
+              Width = 169
+              Height = 5
               Align = alClient
               ActiveGroupIndex = 0
               TabOrder = 0
               View = 14
               OptionsImage.SmallImages = cxImageList1
+              ExplicitWidth = 173
+              ExplicitHeight = 140
               object dxNavBarGroup4: TdxNavBarGroup
                 Caption = 'Documents'
                 LargeImageIndex = 1
@@ -24022,7 +24003,7 @@ object FMenu: TFMenu
           Left = 0
           Top = 0
           Width = 173
-          Height = 420
+          Height = 453
           AllowFloating = True
           AutoHide = False
           Caption = 'NavBar: NavPane View'
@@ -24033,12 +24014,13 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 169
-            Height = 392
+            Height = 425
             Align = alClient
             ActiveGroupIndex = 0
             TabOrder = 0
             View = 15
             OptionsImage.SmallImages = cxImageList1
+            ExplicitHeight = 392
             object dxNavBarGroup1: TdxNavBarGroup
               Caption = 'Documents'
               LargeImageIndex = 1
@@ -28218,7 +28200,7 @@ object FMenu: TFMenu
     Left = 624
     Top = 32
     Bitmap = {
-      494C01010200040020005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010200040028005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006801000020000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000EEE9E600413A35001A14

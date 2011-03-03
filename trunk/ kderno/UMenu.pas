@@ -363,8 +363,8 @@ type
 var
   FMenu: TFMenu;
 
-procedure GenerateRandomEvents(AScheduler: TcxScheduler; ACount: Integer;
-  ARandomResource: Boolean = False);
+//procedure GenerateRandomEvents(AScheduler: TcxScheduler; ACount: Integer;
+  //ARandomResource: Boolean = False);
 implementation
 
 uses
@@ -376,7 +376,7 @@ uses
 var
   WM_SETUPLOOKANDFEEL: Cardinal = WM_USER + 101;
 
-  SportEvents: array[0..12] of string =
+  {SportEvents: array[0..12] of string =
    ('Basketball Qualifying - Men',
     'Lamon Brewster (32-2) vs. Luan Krasniqi (28-1-1) (WBO heavyweight belt)',
     'Vince Philips (47-9-1) vs. Reynaldo Pelonia (35-21-3)',
@@ -391,7 +391,7 @@ var
     'Greco-Roman 96kg - Men - Qualifying',
     'Men''s Bronze Medal Match - RUS - USA');
 
-  MaxRandomPeriod: Integer = 60;
+  MaxRandomPeriod: Integer = 60;   }      {
 
 function GetRandomDate(AScheduler: TcxScheduler): TDateTime;
 begin
@@ -455,7 +455,7 @@ begin
   finally
     AScheduler.Storage.EndUpdate;
   end;
-end;
+end;            }
 
 { TdxSkinEditorPreviewForm }
 
@@ -649,7 +649,7 @@ end;
 
 procedure TFMenu.InitializeScheduler;
 begin
-  GenerateRandomEvents(Scheduler, 50, True);
+  //GenerateRandomEvents(Scheduler, 50, True);
   Scheduler.SelectDays([Date - 1, Date, Date + 1], True);
 end;
 
@@ -765,7 +765,7 @@ begin
   dxSkinController.UseSkins := False; 
   dxSkinController.Kind := AKind;
   dxSkinController.NativeStyle := ANative;
-  dxRibbon.ColorSchemeName := 'Blue';
+  dxRibbon.ColorSchemeName := 'Black';
   SynchronizeLookAndFeel;
 end;
 

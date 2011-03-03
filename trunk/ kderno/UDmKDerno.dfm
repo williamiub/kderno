@@ -1,10 +1,10 @@
 object dmSkinEditor: TdmSkinEditor
   OldCreateOrder = False
-  Height = 192
-  Width = 314
+  Height = 433
+  Width = 768
   object imgBarsImages: TcxImageList
     FormatVersion = 1
-    DesignInfo = 721120
+    DesignInfo = 1245800
     ImageInfo = <
       item
         Image.Data = {
@@ -782,8 +782,8 @@ object dmSkinEditor: TdmSkinEditor
       end>
   end
   object EditRepository: TcxEditRepository
-    Left = 92
-    Top = 12
+    Left = 684
+    Top = 76
     object EditRepositoryImage: TcxEditRepositoryImageItem
       Properties.GraphicClassName = 'TJPEGImage'
       Properties.PopupMenuLayout.CustomMenuItemCaption = '12312'
@@ -806,8 +806,8 @@ object dmSkinEditor: TdmSkinEditor
   end
   object dsCars: TDataSource
     DataSet = mdsCars
-    Left = 24
-    Top = 12
+    Left = 688
+    Top = 20
   end
   object mdsCars: TdxMemData
     Active = True
@@ -7122,8 +7122,8 @@ object dmSkinEditor: TdmSkinEditor
       D7DEA147E550238EB65147789408058254C9500E283CD86888DE964DC8106A75
       508B1D146F8828EDE107FFD9010000000000F9E540}
     SortOptions = []
-    Left = 104
-    Top = 80
+    Left = 608
+    Top = 72
     object mdsCarsID: TAutoIncField
       DisplayWidth = 10
       FieldName = 'ID'
@@ -7872,7 +7872,54 @@ object dmSkinEditor: TdmSkinEditor
             Name = 'Presidents'#39' Day'
           end>
       end>
-    Left = 35
-    Top = 72
+    Left = 675
+    Top = 136
+  end
+  object KDConnection: TSQLConnection
+    ConnectionName = 'KDerno'
+    DriverName = 'Firebird'
+    GetDriverFunc = 'getSQLDriverINTERBASE'
+    LibraryName = 'dbxfb.dll'
+    LoginPrompt = False
+    Params.Strings = (
+      'drivername=Firebird'
+      'Database=C:\Users\Breno\Daemun\KDerno\trunk\DataBase\KDerno.fdb'
+      'rolename=RoleName'
+      'user_name=sysdba'
+      'password=masterkey'
+      'sqldialect=3'
+      'localecode=0000'
+      'blobsize=-1'
+      'commitretain=False'
+      'waitonlocks=True'
+      'isolationlevel=ReadCommitted'
+      'trim char=False')
+    VendorLib = 'fbclient.DLL'
+    Connected = True
+    Left = 32
+    Top = 16
+  end
+  object TUsuario: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'select * from usuario')
+    SQLConnection = KDConnection
+    Left = 32
+    Top = 104
+    object TUsuarioID_USUARIO: TIntegerField
+      FieldName = 'ID_USUARIO'
+      Required = True
+    end
+    object TUsuarioLOGIN: TStringField
+      FieldName = 'LOGIN'
+      Required = True
+      FixedChar = True
+    end
+    object TUsuarioSENHA: TStringField
+      FieldName = 'SENHA'
+      Required = True
+      FixedChar = True
+    end
   end
 end
