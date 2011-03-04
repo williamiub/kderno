@@ -22205,6 +22205,10 @@ object FMenu: TFMenu
       Caption = 'PivotGrid'
       ImageIndex = 4
       OnResize = tsPivotGridResize
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object PreviewPivotGrid: TcxPivotGrid
         Left = 0
         Top = 0
@@ -22303,7 +22307,7 @@ object FMenu: TFMenu
         Left = 0
         Top = 0
         Width = 856
-        Height = 453
+        Height = 420
         ViewDay.Active = True
         Align = alClient
         ControlBox.Control = ControlBox
@@ -22320,19 +22324,17 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
-        ExplicitHeight = 420
         Splitters = {
-          C80200007E0000005703000083000000C302000001000000C8020000C4010000}
-        StoredClientBounds = {010000000100000057030000C4010000}
+          C80200007E0000005703000083000000C302000001000000C8020000A3010000}
+        StoredClientBounds = {010000000100000057030000A3010000}
         object ControlBox: TPanel
           Left = 0
           Top = 0
           Width = 143
-          Height = 321
+          Height = 288
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 288
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -22387,6 +22389,10 @@ object FMenu: TFMenu
     object tsTreeList: TcxTabSheet
       Caption = 'TreeList'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object cxTreeList1: TcxTreeList
         Left = 0
         Top = 0
@@ -22483,6 +22489,10 @@ object FMenu: TFMenu
     object tsVerticalGrid: TcxTabSheet
       Caption = 'VerticalGrid'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object cxVerticalGrid: TcxVerticalGrid
         Left = 0
         Top = 0
@@ -22615,6 +22625,10 @@ object FMenu: TFMenu
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
@@ -23889,12 +23903,11 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 173
-            Height = 33
+            Height = 140
             Visible = False
             AllowFloating = True
             AutoHide = True
             Caption = 'NavBar: Explorer View'
-            ExplicitHeight = 0
             AutoHidePosition = 2
             DockType = 4
             OriginalWidth = 173
@@ -28200,7 +28213,7 @@ object FMenu: TFMenu
     Left = 624
     Top = 32
     Bitmap = {
-      494C01010200040028005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C0101020004002C005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006801000020000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000EEE9E600413A35001A14

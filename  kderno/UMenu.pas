@@ -368,7 +368,7 @@ var
 implementation
 
 uses
-  UDmMenu, dxSkinEditorUtils, dxSkinsStrs;
+   dxSkinEditorUtils, dxSkinsStrs;
 
 {$R *.dfm}
 {$R cxPivotGridData.res}
