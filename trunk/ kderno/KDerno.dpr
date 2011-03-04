@@ -11,9 +11,9 @@ uses
 begin
   Application.Initialize;
   Application.Title := 'KDerno';
+  Application.CreateForm(TFSplash, FSplash);
   Application.CreateForm(TFMenu, FMenu);
   Application.CreateForm(TdmSkinEditor, dmSkinEditor);
-  Application.CreateForm(TFSplash, FSplash);
   FMenu.SkinSelectorVisible := True;
   FMenu.Caption := 'KDerno';
   Application.Run;
