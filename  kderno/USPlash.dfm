@@ -1,7 +1,6 @@
 object FSplash: TFSplash
   Left = 314
   Top = 233
-  AlphaBlend = True
   BorderStyle = bsNone
   ClientHeight = 226
   ClientWidth = 385
@@ -18,10 +17,11 @@ object FSplash: TFSplash
   Position = poScreenCenter
   ScreenSnap = True
   OnCreate = FormCreate
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
   object ImgOrion: TImage
-    Left = -1
+    Left = 0
     Top = 0
     Width = 386
     Height = 229
@@ -111,7 +111,7 @@ object FSplash: TFSplash
       6CFC79EAF3F9E9829FA57FAE7EA1FBE2BB5F1C7FE99B593533FE92FF72E1D7E2
       57F2AF8EBC5EF6BA7BD67FF6F19BE437F373856FE5DF1E7DC778D7FB3EECFDC4
       7CE607EC878A8F7A1FBB3E797F7AB890BCB0F01BF784F3FB32FAF07100000009
-      7048597300000EC100000EC101B8916BED0000F55349444154785EECFD779C64
+      7048597300000EBF00000EBF01380553240000F55349444154785EECFD779C64
       45D9FE8F6F774F4FEA99D940DE9C730E33BB3B61F32E390751312B5940411014
       C9391B411014512429E69C136641C0ECA33EFAC44FFC7E7FDF7FEB77DD55759F
       BE4F75D5093D3D1BCF1FF53AE754D5A9EEE9393BFDDEEBBEEEBBC6BDFEAAC7D4
@@ -4145,24 +4145,6 @@ object FSplash: TFSplash
     Height = 10
     Brush.Color = clCream
     Pen.Color = clInactiveCaption
-    Pen.Width = 3
-  end
-  object SPProgress: TShape
-    Left = 62
-    Top = 167
-    Width = 0
-    Height = 3
-    Brush.Color = clYellow
-    Pen.Color = clYellow
-    Pen.Width = 3
-  end
-  object SPProgress2: TShape
-    Left = 62
-    Top = 167
-    Width = 0
-    Height = 3
-    Brush.Color = clYellow
-    Pen.Color = clMoneyGreen
     Pen.Width = 3
   end
   object LSimple01: TLabel
@@ -10961,6 +10943,7 @@ object FSplash: TFSplash
       500C848D013526A9E55131A018500C280614038A01C580624031A018500C2806
       14038A01C58062408C81FF06D0E91BFFF9E8BE810000000049454E44AE426082}
     Stretch = True
+    Transparent = True
   end
   object FlatSpeedButton1: TFlatSpeedButton
     Left = 340
@@ -10998,6 +10981,7 @@ object FSplash: TFSplash
       9967339967339967339967339967339967339967339967339967339967339967
       33996733996733000000}
     ParentColor = False
+    OnClick = FlatSpeedButton1Click
   end
   object FlatSpeedButton2: TFlatSpeedButton
     Left = 323
@@ -11035,5 +11019,24 @@ object FSplash: TFSplash
       9967339967339967339967339967339967339967339967339967339967339967
       33996733996733000000}
     ParentColor = False
+    OnClick = FlatSpeedButton2Click
+  end
+  object SPProgress: TShape
+    Left = 13
+    Top = 187
+    Width = 0
+    Height = 3
+    Brush.Color = clYellow
+    Pen.Color = clYellow
+    Pen.Width = 3
+  end
+  object SPProgress2: TShape
+    Left = 13
+    Top = 187
+    Width = 0
+    Height = 3
+    Brush.Color = clYellow
+    Pen.Color = clMoneyGreen
+    Pen.Width = 3
   end
 end

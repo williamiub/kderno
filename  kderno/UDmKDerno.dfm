@@ -1,4 +1,4 @@
-object dmSkinEditor: TdmSkinEditor
+object DmKderno: TDmKderno
   OldCreateOrder = False
   Height = 433
   Width = 768
@@ -7900,6 +7900,7 @@ object dmSkinEditor: TdmSkinEditor
     Top = 16
   end
   object TUsuario: TSQLQuery
+    Active = True
     MaxBlobSize = -1
     Params = <>
     SQL.Strings = (
@@ -7920,6 +7921,23 @@ object dmSkinEditor: TdmSkinEditor
       FieldName = 'SENHA'
       Required = True
       FixedChar = True
+    end
+  end
+  object TAgenda: TSQLQuery
+    Active = True
+    MaxBlobSize = 1
+    Params = <>
+    SQL.Strings = (
+      'select * from agenda')
+    SQLConnection = KDConnection
+    Left = 103
+    Top = 104
+    object TAgendaCOD_AGENDA: TIntegerField
+      FieldName = 'COD_AGENDA'
+    end
+    object TAgendaAGENDA: TBlobField
+      FieldName = 'AGENDA'
+      Size = 1
     end
   end
 end
