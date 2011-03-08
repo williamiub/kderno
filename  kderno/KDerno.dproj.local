@@ -15,5 +15,6 @@
     <File Path="UMenu.dfm"/>
     <File Path="USPlash.pas"/>
     <File Path="USPlash.dfm"/>
+    <File Path="UThreadSplash.pas"/>
   </ProjectSortOrder>
 </BorlandProject>

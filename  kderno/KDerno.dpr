@@ -5,7 +5,8 @@ uses
   Dialogs,
   UDmKDerno in 'UDmKDerno.pas' {DmKderno},
   UMenu in 'UMenu.pas' {FMenu},
-  USPlash in 'USPlash.pas' {FSplash};
+  USPlash in 'USPlash.pas' {FSplash},
+  UThreadSplash in 'UThreadSplash.pas';
 
 {$R *.res}
 
