@@ -2,7 +2,8 @@ program KDerno;
 
 uses
   Forms,
-  UDmKDerno in 'UDmKDerno.pas' {TdmSkinEditor},
+  Dialogs,
+  UDmKDerno in 'UDmKDerno.pas' {DmKderno},
   UMenu in 'UMenu.pas' {FMenu},
   USPlash in 'USPlash.pas' {FSplash};
 
@@ -13,7 +14,6 @@ begin
   Application.Title := 'KDerno';
   Application.CreateForm(TFSplash, FSplash);
   Application.CreateForm(TFMenu, FMenu);
-  Application.CreateForm(TdmSkinEditor, dmSkinEditor);
   FMenu.SkinSelectorVisible := True;
   FMenu.Caption := 'KDerno';
   Application.Run;

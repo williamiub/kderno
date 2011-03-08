@@ -8,7 +8,7 @@ uses
   FMTBcd, SqlExpr;
 
 type
-  TdmSkinEditor = class(TDataModule)
+  TDmKderno = class(TDataModule)
     imgBarsImages: TcxImageList;
     EditRepository: TcxEditRepository;
     EditRepositoryImage: TcxEditRepositoryImageItem;
@@ -40,6 +40,9 @@ type
     TUsuarioID_USUARIO: TIntegerField;
     TUsuarioLOGIN: TStringField;
     TUsuarioSENHA: TStringField;
+    TAgenda: TSQLQuery;
+    TAgendaCOD_AGENDA: TIntegerField;
+    TAgendaAGENDA: TBlobField;
   private
     { Private declarations }
   public
@@ -47,7 +50,7 @@ type
   end;
 
 var
-  dmSkinEditor: TdmSkinEditor;
+  DmKderno: TDmKderno;
 
 implementation
 

@@ -48,7 +48,7 @@
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
 			<DCCReference Include="UDmKDerno.pas">
-				<Form>TdmSkinEditor</Form>
+				<Form>DmKderno</Form>
 			</DCCReference>
 			<DCCReference Include="UMenu.pas">
 				<Form>FMenu</Form>
