@@ -6,7 +6,8 @@ uses
   UDmKDerno in 'UDmKDerno.pas' {DmKderno},
   UMenu in 'UMenu.pas' {FMenu},
   USPlash in 'USPlash.pas' {FSplash},
-  UThreadSplash in 'UThreadSplash.pas';
+  UThreadSplash in 'UThreadSplash.pas',
+  Alx in 'Alx.pas';
 
 {$R *.res}
 
