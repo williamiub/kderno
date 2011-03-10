@@ -17,12 +17,12 @@ type
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
-    Image4: TImage;
     Image5: TImage;
     FlatSpeedButton1: TFlatSpeedButton;
     FlatSpeedButton2: TFlatSpeedButton;
     SPProgress: TShape;
     SPProgress2: TShape;
+    Image6: TImage;
     procedure FormCreate(Sender: TObject);
     procedure FlatSpeedButton2Click(Sender: TObject);
     procedure FlatSpeedButton1Click(Sender: TObject);
