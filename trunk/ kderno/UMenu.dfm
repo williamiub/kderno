@@ -21812,18 +21812,22 @@ object FMenu: TFMenu
     Images = ilGroupIcons
     PopupMenu = PopupMenu1
     TabOrder = 6
-    ClientRectBottom = 453
-    ClientRectLeft = 4
-    ClientRectRight = 860
-    ClientRectTop = 33
+    ClientRectBottom = 451
+    ClientRectLeft = 3
+    ClientRectRight = 858
+    ClientRectTop = 35
     object tsGrid: TcxTabSheet
       Caption = 'Grid'
       ImageIndex = 0
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object Grid: TcxGrid
         Left = 0
         Top = 0
-        Width = 856
-        Height = 420
+        Width = 855
+        Height = 416
         Align = alClient
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -21833,6 +21837,8 @@ object FMenu: TFMenu
         ParentFont = False
         TabOrder = 0
         RootLevelOptions.DetailTabsPosition = dtpTop
+        ExplicitWidth = 856
+        ExplicitHeight = 420
         object CardViewHorizontal: TcxGridDBCardView
           NavigatorButtons.ConfirmDelete = False
           DataController.Summary.DefaultGroupSummaryItems = <>
@@ -22205,15 +22211,15 @@ object FMenu: TFMenu
       Caption = 'PivotGrid'
       ImageIndex = 4
       OnResize = tsPivotGridResize
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object PreviewPivotGrid: TcxPivotGrid
         Left = 0
         Top = 0
-        Width = 856
-        Height = 453
+        Width = 855
+        Height = 416
         Align = alClient
         Groups = <
           item
@@ -22221,6 +22227,7 @@ object FMenu: TFMenu
             Caption = 'FieldsGroup 1'
           end>
         TabOrder = 0
+        ExplicitWidth = 856
         ExplicitHeight = 420
         object pgfPurchaseQuarter: TcxPivotGridField
           Area = faColumn
@@ -22303,11 +22310,15 @@ object FMenu: TFMenu
     object tsScheduler: TcxTabSheet
       Caption = 'Scheduler'
       ImageIndex = 6
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object Scheduler: TcxScheduler
         Left = 0
         Top = 0
-        Width = 856
-        Height = 420
+        Width = 855
+        Height = 416
         ViewDay.Active = True
         Align = alClient
         ControlBox.Control = ControlBox
@@ -22324,17 +22335,20 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
+        ExplicitWidth = 856
+        ExplicitHeight = 420
         Splitters = {
-          C80200007E0000005703000083000000C302000001000000C8020000A3010000}
-        StoredClientBounds = {010000000100000057030000A3010000}
+          C70200007E0000005603000083000000C202000001000000C70200009F010000}
+        StoredClientBounds = {0100000001000000560300009F010000}
         object ControlBox: TPanel
           Left = 0
           Top = 0
           Width = 143
-          Height = 288
+          Height = 284
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
+          ExplicitHeight = 288
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -22389,15 +22403,15 @@ object FMenu: TFMenu
     object tsTreeList: TcxTabSheet
       Caption = 'TreeList'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object cxTreeList1: TcxTreeList
         Left = 0
         Top = 0
-        Width = 856
-        Height = 453
+        Width = 855
+        Height = 416
         Align = alClient
         Bands = <
           item
@@ -22411,6 +22425,7 @@ object FMenu: TFMenu
         OptionsView.Indicator = True
         Preview.Column = cxTreeList1cxTreeListColumn2
         TabOrder = 0
+        ExplicitWidth = 856
         ExplicitHeight = 420
         Data = {
           00000500720200000F00000044617461436F6E74726F6C6C6572310400000012
@@ -22489,19 +22504,20 @@ object FMenu: TFMenu
     object tsVerticalGrid: TcxTabSheet
       Caption = 'VerticalGrid'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object cxVerticalGrid: TcxVerticalGrid
         Left = 0
         Top = 0
-        Width = 856
-        Height = 453
+        Width = 855
+        Height = 416
         Align = alClient
         OptionsView.BandsInterval = 3
         OptionsView.RowHeaderWidth = 146
         TabOrder = 0
+        ExplicitWidth = 856
         ExplicitHeight = 420
         Version = 1
         object cxVerticalGridEditorRow1: TcxEditorRow
@@ -22625,18 +22641,19 @@ object FMenu: TFMenu
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
-        Width = 856
-        Height = 453
+        Width = 855
+        Height = 416
         Align = alClient
         TabOrder = 0
         TabStop = False
+        ExplicitWidth = 856
         ExplicitHeight = 420
         object Image1: TImage
           Left = 364
@@ -23620,6 +23637,10 @@ object FMenu: TFMenu
     object tsEditors: TcxTabSheet
       Caption = 'Editors'
       ImageIndex = 5
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       object cxCheckGroup1: TcxCheckGroup
         Left = 8
         Top = 8
@@ -23847,39 +23868,45 @@ object FMenu: TFMenu
     object cxTabSheet1: TcxTabSheet
       Caption = 'Docking && NavBar'
       ImageIndex = 7
+      ExplicitLeft = 4
+      ExplicitTop = 33
+      ExplicitWidth = 856
+      ExplicitHeight = 420
       DesignSize = (
-        856
-        420)
+        855
+        416)
       object dxDockSite: TdxDockSite
         Left = 0
         Top = 0
-        Width = 856
-        Height = 420
+        Width = 855
+        Height = 416
         Align = alClient
+        ExplicitWidth = 856
+        ExplicitHeight = 420
         DockType = 0
-        OriginalWidth = 856
-        OriginalHeight = 420
+        OriginalWidth = 855
+        OriginalHeight = 416
         object dxLayoutDockSite4: TdxLayoutDockSite
           Left = 173
           Top = 0
-          Width = 655
-          Height = 453
+          Width = 654
+          Height = 416
           DockType = 1
           OriginalWidth = 300
           OriginalHeight = 200
           object dxLayoutDockSite1: TdxLayoutDockSite
             Left = 0
             Top = 0
-            Width = 655
-            Height = 453
+            Width = 654
+            Height = 416
             DockType = 1
             OriginalWidth = 300
             OriginalHeight = 200
             object dxLayoutDockSite3: TdxLayoutDockSite
               Left = 0
               Top = 0
-              Width = 655
-              Height = 453
+              Width = 654
+              Height = 416
               DockType = 1
               OriginalWidth = 300
               OriginalHeight = 200
@@ -23887,8 +23914,8 @@ object FMenu: TFMenu
             object dxDockMainPanel: TdxDockPanel
               Left = 0
               Top = 0
-              Width = 655
-              Height = 453
+              Width = 654
+              Height = 416
               AllowFloating = True
               AutoHide = False
               Caption = 'Main'
@@ -23903,7 +23930,7 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 173
-            Height = 140
+            Height = 0
             Visible = False
             AllowFloating = True
             AutoHide = True
@@ -23915,8 +23942,8 @@ object FMenu: TFMenu
             object dxNavPane: TdxNavBar
               Left = 0
               Top = 0
-              Width = 169
-              Height = 5
+              Width = 167
+              Height = 0
               Align = alClient
               ActiveGroupIndex = 0
               TabOrder = 0
@@ -24016,7 +24043,7 @@ object FMenu: TFMenu
           Left = 0
           Top = 0
           Width = 173
-          Height = 453
+          Height = 416
           AllowFloating = True
           AutoHide = False
           Caption = 'NavBar: NavPane View'
@@ -24026,13 +24053,14 @@ object FMenu: TFMenu
           object dxNavBar: TdxNavBar
             Left = 0
             Top = 0
-            Width = 169
-            Height = 425
+            Width = 167
+            Height = 381
             Align = alClient
             ActiveGroupIndex = 0
             TabOrder = 0
             View = 15
             OptionsImage.SmallImages = cxImageList1
+            ExplicitWidth = 169
             ExplicitHeight = 392
             object dxNavBarGroup1: TdxNavBarGroup
               Caption = 'Documents'
@@ -26298,7 +26326,7 @@ object FMenu: TFMenu
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
     Font.Height = -11
-    Font.Name = 'MS Sans Serif'
+    Font.Name = 'Tahoma'
     Font.Style = []
     Options = [doActivateAfterDocking, doDblClickDocking, doFloatingOnTop, doTabContainerHasCaption, doTabContainerCanAutoHide, doSideContainerCanClose, doSideContainerCanAutoHide, doTabContainerCanInSideContainer]
     ViewStyle = vsUseLookAndFeel
@@ -26306,8 +26334,6 @@ object FMenu: TFMenu
     Top = 33
   end
   object dxSkinController: TdxSkinController
-    Kind = lfOffice11
-    NativeStyle = True
     SkinName = 'UserSkin'
     OnSkinForm = dxSkinControllerSkinForm
     Left = 858
@@ -28213,7 +28239,7 @@ object FMenu: TFMenu
     Left = 624
     Top = 32
     Bitmap = {
-      494C0101020004002C005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010200040030005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006801000020000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000EEE9E600413A35001A14
