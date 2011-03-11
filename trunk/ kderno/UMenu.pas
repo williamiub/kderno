@@ -33,15 +33,7 @@ uses
   dxSkinsdxNavBar2Painter, dxSkinsForm, dxSkinsdxDockControlPainter, dxSkinsdxBarPainter,
   dxSkinsdxRibbonPainter, dxSkinscxSchedulerPainter,
   dxSkinscxScheduler3Painter, cxDWMApi,
-  dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu, dxSkinBlack, dxSkinBlue,
-  dxSkinCaramel, dxSkinCoffee, dxSkinDarkRoom, dxSkinDarkSide, dxSkinFoggy,
-  dxSkinGlassOceans, dxSkiniMaginary, dxSkinLilian, dxSkinLiquidSky,
-  dxSkinLondonLiquidSky, dxSkinMcSkin, dxSkinMoneyTwins, dxSkinOffice2007Black,
-  dxSkinOffice2007Blue, dxSkinOffice2007Green, dxSkinOffice2007Pink,
-  dxSkinOffice2007Silver, dxSkinOffice2010Black, dxSkinOffice2010Blue,
-  dxSkinOffice2010Silver, dxSkinPumpkin, dxSkinSeven, dxSkinSharp, dxSkinSilver,
-  dxSkinSpringTime, dxSkinStardust, dxSkinSummer2008, dxSkinsDefaultPainters,
-  dxSkinValentine, dxSkinXmas2008Blue;
+  dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu;
 
 type
   TFMenu = class(TdxRibbonForm, IcxLookAndFeelNotificationListener)
@@ -99,8 +91,6 @@ type
     ImageList: TImageList;
     tbSkins: TdxBar;
     btnSmallRibbonStyle: TdxBarButton;
-    dxRibbonTab3: TdxRibbonTab;
-    tbLinks: TdxBar;
     dxBarButton2: TdxBarButton;
     dxBarButton3: TdxBarButton;
     dxBarButton4: TdxBarButton;
@@ -110,102 +100,11 @@ type
     dxLayoutOfficeLookAndFeel: TdxLayoutOfficeLookAndFeel;
     dxLayoutWebLookAndFeel: TdxLayoutWebLookAndFeel;
     pcGrids: TcxPageControl;
-    tsGrid: TcxTabSheet;
-    Grid: TcxGrid;
-    CardViewHorizontal: TcxGridDBCardView;
-    CardViewHorizontalTrademark: TcxGridDBCardViewRow;
-    CardViewHorizontalPicture: TcxGridDBCardViewRow;
-    CardViewHorizontalModel: TcxGridDBCardViewRow;
-    CardViewHorizontalRow3: TcxGridDBCardViewRow;
-    CardViewHorizontalHP: TcxGridDBCardViewRow;
-    CardViewHorizontalLiter: TcxGridDBCardViewRow;
-    CardViewHorizontalCyl: TcxGridDBCardViewRow;
-    CardViewHorizontalRow4: TcxGridDBCardViewRow;
-    CardViewHorizontalTransmissSpeedCount: TcxGridDBCardViewRow;
-    CardViewHorizontalTransmissAutomatic: TcxGridDBCardViewRow;
-    CardViewHorizontalRow2: TcxGridDBCardViewRow;
-    CardViewHorizontalMPG_City: TcxGridDBCardViewRow;
-    CardViewHorizontalMPG_Highway: TcxGridDBCardViewRow;
-    CardViewHorizontalCategory: TcxGridDBCardViewRow;
-    CardViewHorizontalRow1: TcxGridDBCardViewRow;
-    CardViewHorizontalDescription: TcxGridDBCardViewRow;
-    CardViewHorizontalHyperlink: TcxGridDBCardViewRow;
-    CardViewHorizontalPrice: TcxGridDBCardViewRow;
-    CardViewVertical: TcxGridDBCardView;
-    CardViewVerticalTrademark: TcxGridDBCardViewRow;
-    CardViewVerticalModel: TcxGridDBCardViewRow;
-    CardViewVerticalPicture: TcxGridDBCardViewRow;
-    CardViewVerticalHyperlink: TcxGridDBCardViewRow;
-    CardViewVerticalPrice: TcxGridDBCardViewRow;
-    CardViewVerticalRow1: TcxGridDBCardViewRow;
-    CardViewVerticalHP: TcxGridDBCardViewRow;
-    CardViewVerticalLiter: TcxGridDBCardViewRow;
-    CardViewVerticalCyl: TcxGridDBCardViewRow;
-    CardViewVerticalRow2: TcxGridDBCardViewRow;
-    CardViewVerticalTransmissSpeedCount: TcxGridDBCardViewRow;
-    CardViewVerticalTransmissAutomatic: TcxGridDBCardViewRow;
-    CardViewVerticalCategory: TcxGridDBCardViewRow;
-    CardViewVerticalFuelEconomy: TcxGridDBCardViewRow;
-    CardViewVerticalMPG_City: TcxGridDBCardViewRow;
-    CardViewVerticalMPG_Highway: TcxGridDBCardViewRow;
-    CardViewVerticalRow3: TcxGridDBCardViewRow;
-    CardViewVerticalDescription: TcxGridDBCardViewRow;
-    TableView: TcxGridDBTableView;
-    TableViewID: TcxGridDBColumn;
-    TableViewTrademark: TcxGridDBColumn;
-    TableViewModel: TcxGridDBColumn;
-    TableViewCategory: TcxGridDBColumn;
-    TableViewPicture: TcxGridDBColumn;
-    TableViewPrice: TcxGridDBColumn;
-    BandedTableView: TcxGridDBBandedTableView;
-    BandedTableViewTrademark: TcxGridDBBandedColumn;
-    BandedTableViewModel: TcxGridDBBandedColumn;
-    BandedTableViewLiter: TcxGridDBBandedColumn;
-    BandedTableViewTransmissAutomatic: TcxGridDBBandedColumn;
-    BandedTableViewCategory: TcxGridDBBandedColumn;
-    BandedTableViewHyperlink: TcxGridDBBandedColumn;
-    BandedTableViewPicture: TcxGridDBBandedColumn;
-    BandedTableViewPrice: TcxGridDBBandedColumn;
-    GridLevel3: TcxGridLevel;
-    GridLevel4: TcxGridLevel;
-    GridLevel1: TcxGridLevel;
-    GridLevel2: TcxGridLevel;
-    tsPivotGrid: TcxTabSheet;
-    PreviewPivotGrid: TcxPivotGrid;
-    pgfPurchaseQuarter: TcxPivotGridField;
-    pgfPurchaseMonth: TcxPivotGridField;
-    pgfPaymentType: TcxPivotGridField;
-    pgfQuantity: TcxPivotGridField;
-    pgfCarName: TcxPivotGridField;
-    pgfUnitPrice: TcxPivotGridField;
-    pgfCompanyName: TcxPivotGridField;
-    pgfPaymentAmount: TcxPivotGridField;
     tsScheduler: TcxTabSheet;
     Scheduler: TcxScheduler;
     ControlBox: TPanel;
     rgGroupBy: TcxRadioGroup;
     rgViews: TcxRadioGroup;
-    tsTreeList: TcxTabSheet;
-    cxTreeList1: TcxTreeList;
-    cxTreeList1cxTreeListColumn1: TcxTreeListColumn;
-    cxTreeList1cxTreeListColumn2: TcxTreeListColumn;
-    cxTreeList1cxTreeListColumn3: TcxTreeListColumn;
-    cxTreeList1cxTreeListColumn4: TcxTreeListColumn;
-    tsVerticalGrid: TcxTabSheet;
-    cxVerticalGrid: TcxVerticalGrid;
-    cxVerticalGridEditorRow1: TcxEditorRow;
-    cxVerticalGridCategoryRow1: TcxCategoryRow;
-    cxVerticalGridEditorRow2: TcxEditorRow;
-    cxVerticalGridEditorRow5: TcxEditorRow;
-    cxVerticalGridEditorRow3: TcxEditorRow;
-    cxVerticalGridCategoryRow2: TcxCategoryRow;
-    cxVerticalGridEditorRow9: TcxEditorRow;
-    cxVerticalGridEditorRow7: TcxEditorRow;
-    cxVerticalGridEditorRow6: TcxEditorRow;
-    cxVerticalGridEditorRow4: TcxEditorRow;
-    cxVerticalGridEditorRow8: TcxEditorRow;
-    cxVerticalGridEditorRow10: TcxEditorRow;
-    cxVerticalGridEditorRow11: TcxEditorRow;
     tsLayoutControl: TcxTabSheet;
     lcMain: TdxLayoutControl;
     Image1: TImage;
@@ -340,13 +239,11 @@ type
     function GetUseRibbonStyle: Boolean;
     procedure SetSkinSelectorVisible(AValue: Boolean);
     procedure SetUseRibbonStyle(AValue: Boolean);
-    // IcxLookAndFeelNotificationListener
     function GetObject: TObject;
     procedure MasterLookAndFeelChanged(Sender: TcxLookAndFeel; AChangedValues: TcxLookAndFeelValues);
     procedure MasterLookAndFeelDestroying(Sender: TcxLookAndFeel);
   protected
     function GetUseSkinForm: Boolean;
-    procedure InitializePivotGridData;
     procedure InitializePreview(ALookAndFeel: TcxLookAndFeel);
     procedure InitializeScheduler;
     procedure InitializeSkinList;
@@ -355,7 +252,6 @@ type
     procedure SetupLookAndFeel(AKind: TcxLookAndFeelKind; ANative: Boolean);
     procedure SynchronizeLookAndFeel;
     procedure WndProc(var Message: TMessage); override;
-    //
     property LookAndFeel: TcxLookAndFeel read GetLookAndFeel;
     property ResNames: TStringList read FResNames;
     property SkinNames: TStringList read FSkinNames;
@@ -371,8 +267,6 @@ type
 var
   FMenu: TFMenu;
 
-//procedure GenerateRandomEvents(AScheduler: TcxScheduler; ACount: Integer;
-  //ARandomResource: Boolean = False);
 implementation
 
 uses
@@ -384,98 +278,13 @@ uses
 var
   WM_SETUPLOOKANDFEEL: Cardinal = WM_USER + 101;
 
-  {SportEvents: array[0..12] of string =
-   ('Basketball Qualifying - Men',
-    'Lamon Brewster (32-2) vs. Luan Krasniqi (28-1-1) (WBO heavyweight belt)',
-    'Vince Philips (47-9-1) vs. Reynaldo Pelonia (35-21-3)',
-    'Kili Madrid (6-0-1) vs. Donny Fosmire (10-7)',
-    'Nelson Zepeda (1-0-1) vs. Kaleo Padilla (0-0)',
-    'Justin Mercado (1-1) vs. Waldo Rojas (0-0)',
-    'Australian Open',
-    'Weightlifting 48 Kg - Women  - Final',
-    'Sabre - Men - 1st Round',
-    'Epee - Women - 1st Round',
-    'Soccer 1st Round - *Women''s Preliminaries - Women',
-    'Greco-Roman 96kg - Men - Qualifying',
-    'Men''s Bronze Medal Match - RUS - USA');
-
-  MaxRandomPeriod: Integer = 60;   }      {
-
-function GetRandomDate(AScheduler: TcxScheduler): TDateTime;
-begin
-  Result := Date + Random(MaxRandomPeriod)*(Random(2) * 2 - 1) + AScheduler.OptionsView.WorkStart;
-  if Trunc(Result) = Date then
-    Result := Result + Random(10) * HourToTime
-  else
-    Result := Result + Random(24) * HourToTime;
-end;
-
-function GetRandomResourceID(AScheduler: TcxScheduler): Variant;
-begin
-  Result := Null;
-  if (AScheduler.Storage = nil) or (AScheduler.Storage.ResourceCount = 0) then
-    Exit
-  else
-    if AScheduler.Storage.ResourceCount = 1 then
-      Result := AScheduler.Storage.ResourceIDs[0]
-    else
-      Result := AScheduler.Storage.ResourceIDs[Random(AScheduler.Storage.ResourceCount)];
-end;
-
-function GetRandomState: Integer;
-begin
-  Result := Random(4);
-end;
-
-procedure CreateEventObject(AScheduler: TcxScheduler; AAllDayEvent, ARandomResource: Boolean;
-  AEventDuration: TDateTime);
-var
-  ADate: TDateTime;
-  AEvent: TcxSchedulerEvent;
-begin
-  AEvent := AScheduler.Storage.CreateEvent;
-  ADate := GetRandomDate(AScheduler);
-  AEvent.Start := ADate;
-  AEvent.AllDayEvent := AAllDayEvent;
-  AEvent.Finish := ADate + AEventDuration;
-  AEvent.State := GetRandomState;
-  AEvent.LabelColor := EventLabelColors[Random(11)];
-  AEvent.Caption := SportEvents[Random(High(SportEvents) + 1)];
-  if ARandomResource then
-    AEvent.ResourceID := GetRandomResourceID(AScheduler);
-end;
-
-procedure GenerateRandomEvents(AScheduler: TcxScheduler; ACount: Integer;
-  ARandomResource: Boolean = False);
-var
-  I: Integer;
-begin
-  if AScheduler.Storage = nil then Exit;
-  AScheduler.Storage.BeginUpdate;
-  try
-    Randomize;
-    for I := 0 to ACount div 5 * 3 - 1 do
-      CreateEventObject(AScheduler, False, ARandomResource, (Random(180) + 30) * MinuteToTime);
-    for I := 0 to ACount div 5 - 1 do
-      CreateEventObject(AScheduler, True, ARandomResource, 1);
-    for I := 0 to ACount div 5 - 1 do
-      CreateEventObject(AScheduler, False, ARandomResource, 1 + (Random(180) + 30) * MinuteToTime);
-  finally
-    AScheduler.Storage.EndUpdate;
-  end;
-end;            }
-
-{ TdxSkinEditorPreviewForm }
 
 constructor TFMenu.Create(AOwner: TComponent);
 begin
   inherited Create(AOwner);
   FLayoutSkinLookAndFeel := TdxLayoutSkinLookAndFeel.Create(Self);
   lcMain.LookAndFeel := FLayoutSkinLookAndFeel;
-  InitializePivotGridData;
   LookAndFeel.AddChangeListener(Self);
-  Grid.DoubleBuffered := True;
-  PreviewPivotGrid.DoubleBuffered := True;
   FResNames := TStringList.Create;
   FSkinNames := TStringList.Create;
   InitializeScheduler;
@@ -564,7 +373,7 @@ begin
       tbStandard.Row := 0;
       tbFormat.Row := 0;
       tbSkins.Row := 0;
-      tbLinks.Row := 1;
+     // tbLinks.Row := 1;
       blBarsStyle.Visible := ABarItemVisibility[AValue];
       btnSmallRibbonStyle.Visible := ABarItemVisibility[not AValue];
       btnSmallRibbonStyle.Down := AValue;
@@ -627,19 +436,6 @@ begin
   Result := not (UseRibbonStyle and dxRibbon.SupportNonClientDrawing);
 end;
 
-procedure TFMenu.InitializePivotGridData;
-var
-  AStream: TStream;
-begin
-  AStream := TResourceStream.Create(hInstance, 'PIVOTPREVIEWDATA', 'PIVOTDATA');
-  try
-    AStream.Position := 0;
-    PreviewPivotGrid.DataController.LoadFromStream(AStream);
-    PreviewPivotGrid.FullRefresh;
-  finally
-    AStream.Free;
-  end;
-end;
 
 procedure TFMenu.InitializePreview(ALookAndFeel: TcxLookAndFeel);
 begin

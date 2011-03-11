@@ -21793,21 +21793,13 @@ object FMenu: TFMenu
         end>
       Index = 1
     end
-    object dxRibbonTab3: TdxRibbonTab
-      Caption = 'About'
-      Groups = <
-        item
-          ToolbarName = 'tbLinks'
-        end>
-      Index = 2
-    end
   end
   object pcGrids: TcxPageControl
     Left = 28
     Top = 159
     Width = 864
     Height = 457
-    ActivePage = tsGrid
+    ActivePage = tsScheduler
     Align = alClient
     Images = ilGroupIcons
     PopupMenu = PopupMenu1
@@ -21816,504 +21808,9 @@ object FMenu: TFMenu
     ClientRectLeft = 3
     ClientRectRight = 858
     ClientRectTop = 35
-    object tsGrid: TcxTabSheet
-      Caption = 'Grid'
-      ImageIndex = 0
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
-      object Grid: TcxGrid
-        Left = 0
-        Top = 0
-        Width = 855
-        Height = 416
-        Align = alClient
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -11
-        Font.Name = 'Tahoma'
-        Font.Style = []
-        ParentFont = False
-        TabOrder = 0
-        RootLevelOptions.DetailTabsPosition = dtpTop
-        ExplicitWidth = 856
-        ExplicitHeight = 420
-        object CardViewHorizontal: TcxGridDBCardView
-          NavigatorButtons.ConfirmDelete = False
-          DataController.Summary.DefaultGroupSummaryItems = <>
-          DataController.Summary.FooterSummaryItems = <>
-          DataController.Summary.SummaryGroups = <>
-          OptionsCustomize.CardExpanding = True
-          OptionsCustomize.LayeredRows = True
-          OptionsCustomize.RowMoving = True
-          OptionsSelection.MultiSelect = True
-          OptionsView.CardWidth = 297
-          OptionsView.CategorySeparatorWidth = 1
-          OptionsView.CellAutoHeight = True
-          object CardViewHorizontalTrademark: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Trademark'
-            Kind = rkCaption
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalPicture: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Picture'
-            Options.ShowCaption = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalModel: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Model'
-            Options.ShowCaption = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalRow3: TcxGridDBCardViewRow
-            Caption = 'Engine'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalHP: TcxGridDBCardViewRow
-            Caption = 'Max output (hp)'
-            DataBinding.FieldName = 'HP'
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalLiter: TcxGridDBCardViewRow
-            Caption = 'Displacement (liters)'
-            DataBinding.FieldName = 'Liter'
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalCyl: TcxGridDBCardViewRow
-            Caption = 'Cylinders'
-            DataBinding.FieldName = 'Cyl'
-            Position.BeginsLayer = False
-          end
-          object CardViewHorizontalRow4: TcxGridDBCardViewRow
-            Caption = 'Transmission'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalTransmissSpeedCount: TcxGridDBCardViewRow
-            Caption = 'Speed count'
-            DataBinding.FieldName = 'TransmissSpeedCount'
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalTransmissAutomatic: TcxGridDBCardViewRow
-            Caption = 'Automatic'
-            DataBinding.FieldName = 'TransmissAutomatic'
-            Position.BeginsLayer = False
-          end
-          object CardViewHorizontalRow2: TcxGridDBCardViewRow
-            Caption = 'Fuel economy'
-            DataBinding.FieldName = 'FuelEconomy'
-            Expanded = True
-            Kind = rkCategory
-            Options.Editing = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalMPG_City: TcxGridDBCardViewRow
-            Caption = 'City (mpg)'
-            DataBinding.FieldName = 'MPG_City'
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalMPG_Highway: TcxGridDBCardViewRow
-            Caption = 'Highway (mpg)'
-            DataBinding.FieldName = 'MPG_Highway'
-            Position.BeginsLayer = False
-          end
-          object CardViewHorizontalCategory: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Category'
-            Visible = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalRow1: TcxGridDBCardViewRow
-            Caption = 'Additional information'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalDescription: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Description'
-            Options.ShowCaption = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalHyperlink: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Hyperlink'
-            Options.ShowCaption = False
-            Position.BeginsLayer = True
-          end
-          object CardViewHorizontalPrice: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Price'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-          end
-        end
-        object CardViewVertical: TcxGridDBCardView
-          NavigatorButtons.ConfirmDelete = False
-          DataController.Summary.DefaultGroupSummaryItems = <>
-          DataController.Summary.FooterSummaryItems = <>
-          DataController.Summary.SummaryGroups = <>
-          LayoutDirection = ldVertical
-          OptionsCustomize.LayeredRows = True
-          OptionsCustomize.RowMoving = True
-          OptionsView.CardAutoWidth = True
-          OptionsView.CardWidth = 10000
-          OptionsView.CellAutoHeight = True
-          OptionsView.LayerSeparatorWidth = 1
-          OptionsView.SeparatorWidth = 0
-          RowLayout = rlVertical
-          object CardViewVerticalTrademark: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Trademark'
-            Options.ShowCaption = False
-            Position.BeginsLayer = True
-          end
-          object CardViewVerticalModel: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Model'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalPicture: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Picture'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-            Position.Width = 250
-          end
-          object CardViewVerticalHyperlink: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Hyperlink'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalPrice: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Price'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalRow1: TcxGridDBCardViewRow
-            Caption = 'Engine'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewVerticalHP: TcxGridDBCardViewRow
-            Caption = 'Max output (hp)'
-            DataBinding.FieldName = 'HP'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalLiter: TcxGridDBCardViewRow
-            Caption = 'Displacement (liters)'
-            DataBinding.FieldName = 'Liter'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalCyl: TcxGridDBCardViewRow
-            Caption = 'Cylinders'
-            DataBinding.FieldName = 'Cyl'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalRow2: TcxGridDBCardViewRow
-            Caption = 'Transmission'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalTransmissSpeedCount: TcxGridDBCardViewRow
-            Caption = 'Speed count'
-            DataBinding.FieldName = 'TransmissSpeedCount'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalTransmissAutomatic: TcxGridDBCardViewRow
-            Caption = 'Automatic'
-            DataBinding.FieldName = 'TransmissAutomatic'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalCategory: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Category'
-            Visible = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalFuelEconomy: TcxGridDBCardViewRow
-            Caption = 'Fuel economy'
-            DataBinding.FieldName = 'FuelEconomy'
-            Expanded = True
-            Kind = rkCategory
-            Options.Editing = False
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalMPG_City: TcxGridDBCardViewRow
-            Caption = 'City (mpg)'
-            DataBinding.FieldName = 'MPG_City'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalMPG_Highway: TcxGridDBCardViewRow
-            Caption = 'Highway (mpg)'
-            DataBinding.FieldName = 'MPG_Highway'
-            Position.BeginsLayer = False
-          end
-          object CardViewVerticalRow3: TcxGridDBCardViewRow
-            Caption = 'Additional information'
-            Expanded = True
-            Kind = rkCategory
-            Options.ShowData = False
-            Position.BeginsLayer = True
-          end
-          object CardViewVerticalDescription: TcxGridDBCardViewRow
-            DataBinding.FieldName = 'Description'
-            Options.ShowCaption = False
-            Position.BeginsLayer = False
-          end
-        end
-        object TableView: TcxGridDBTableView
-          NavigatorButtons.ConfirmDelete = False
-          DataController.Summary.DefaultGroupSummaryItems = <
-            item
-              Kind = skCount
-              Position = spFooter
-              Column = TableViewCategory
-            end>
-          DataController.Summary.FooterSummaryItems = <
-            item
-              Kind = skCount
-              Column = TableViewCategory
-            end>
-          DataController.Summary.SummaryGroups = <>
-          OptionsCustomize.ColumnsQuickCustomization = True
-          OptionsView.CellAutoHeight = True
-          OptionsView.Footer = True
-          OptionsView.GroupFooters = gfAlwaysVisible
-          OptionsView.Indicator = True
-          object TableViewID: TcxGridDBColumn
-            DataBinding.FieldName = 'ID'
-            Visible = False
-          end
-          object TableViewTrademark: TcxGridDBColumn
-            DataBinding.FieldName = 'Trademark'
-            GroupIndex = 0
-            Width = 79
-          end
-          object TableViewModel: TcxGridDBColumn
-            DataBinding.FieldName = 'Model'
-            Width = 151
-          end
-          object TableViewCategory: TcxGridDBColumn
-            DataBinding.FieldName = 'Category'
-            Width = 149
-          end
-          object TableViewPicture: TcxGridDBColumn
-            DataBinding.FieldName = 'Picture'
-            PropertiesClassName = 'TcxImageProperties'
-            Properties.GraphicClassName = 'TJPEGImage'
-            Width = 131
-          end
-          object TableViewPrice: TcxGridDBColumn
-            DataBinding.FieldName = 'Price'
-          end
-        end
-        object BandedTableView: TcxGridDBBandedTableView
-          NavigatorButtons.ConfirmDelete = False
-          DataController.Summary.DefaultGroupSummaryItems = <>
-          DataController.Summary.FooterSummaryItems = <>
-          DataController.Summary.SummaryGroups = <>
-          OptionsView.CellAutoHeight = True
-          OptionsView.Footer = True
-          OptionsView.GroupFooters = gfAlwaysVisible
-          OptionsView.Indicator = True
-          Bands = <
-            item
-              Caption = 'Product'
-            end
-            item
-              Caption = 'Preview'
-            end
-            item
-              Caption = 'Others'
-            end>
-          object BandedTableViewTrademark: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Trademark'
-            Width = 79
-            Position.BandIndex = 0
-            Position.ColIndex = 0
-            Position.RowIndex = 0
-          end
-          object BandedTableViewModel: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Model'
-            Position.BandIndex = 0
-            Position.ColIndex = 1
-            Position.RowIndex = 0
-          end
-          object BandedTableViewLiter: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Liter'
-            Width = 38
-            Position.BandIndex = 2
-            Position.ColIndex = 0
-            Position.RowIndex = 0
-          end
-          object BandedTableViewTransmissAutomatic: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'TransmissAutomatic'
-            Width = 112
-            Position.BandIndex = 2
-            Position.ColIndex = 1
-            Position.RowIndex = 0
-          end
-          object BandedTableViewCategory: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Category'
-            Width = 51
-            Position.BandIndex = 2
-            Position.ColIndex = 2
-            Position.RowIndex = 0
-          end
-          object BandedTableViewHyperlink: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Hyperlink'
-            Width = 137
-            Position.BandIndex = 0
-            Position.ColIndex = 0
-            Position.RowIndex = 1
-          end
-          object BandedTableViewPicture: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Picture'
-            Width = 157
-            Position.BandIndex = 1
-            Position.ColIndex = 0
-            Position.LineCount = 2
-            Position.RowIndex = 0
-          end
-          object BandedTableViewPrice: TcxGridDBBandedColumn
-            DataBinding.FieldName = 'Price'
-            Width = 68
-            Position.BandIndex = 2
-            Position.ColIndex = 0
-            Position.RowIndex = 1
-          end
-        end
-        object GridLevel3: TcxGridLevel
-          Caption = 'Table View'
-          GridView = TableView
-        end
-        object GridLevel4: TcxGridLevel
-          Caption = 'Banded Table View'
-          GridView = BandedTableView
-        end
-        object GridLevel1: TcxGridLevel
-          Caption = 'Card View - Horizontal Layout'
-          GridView = CardViewHorizontal
-        end
-        object GridLevel2: TcxGridLevel
-          Caption = 'Card View - Vertical Layout'
-          GridView = CardViewVertical
-        end
-      end
-    end
-    object tsPivotGrid: TcxTabSheet
-      Caption = 'PivotGrid'
-      ImageIndex = 4
-      OnResize = tsPivotGridResize
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
-      object PreviewPivotGrid: TcxPivotGrid
-        Left = 0
-        Top = 0
-        Width = 855
-        Height = 416
-        Align = alClient
-        Groups = <
-          item
-            IsCaptionAssigned = True
-            Caption = 'FieldsGroup 1'
-          end>
-        TabOrder = 0
-        ExplicitWidth = 856
-        ExplicitHeight = 420
-        object pgfPurchaseQuarter: TcxPivotGridField
-          Area = faColumn
-          AreaIndex = 0
-          IsCaptionAssigned = True
-          Caption = 'Purchase Quarter'
-          DataBinding.ValueType = 'DateTime'
-          GroupIndex = 0
-          GroupInterval = giDateQuarter
-          Visible = True
-        end
-        object pgfPurchaseMonth: TcxPivotGridField
-          Area = faColumn
-          AreaIndex = 1
-          IsCaptionAssigned = True
-          Caption = 'Purchase Month'
-          DataBinding.ValueType = 'DateTime'
-          GroupIndex = 0
-          GroupExpanded = False
-          GroupInterval = giDateMonth
-          Visible = True
-        end
-        object pgfPaymentType: TcxPivotGridField
-          Tag = 1
-          Area = faRow
-          AreaIndex = 0
-          IsCaptionAssigned = True
-          Caption = 'Payment Type'
-          DataBinding.ValueType = 'String'
-          Visible = True
-          Width = 90
-        end
-        object pgfQuantity: TcxPivotGridField
-          Tag = 2
-          Area = faData
-          AreaIndex = 0
-          IsCaptionAssigned = True
-          Caption = 'Quantity'
-          DataBinding.ValueType = 'Integer'
-          Visible = True
-          Width = 62
-        end
-        object pgfCarName: TcxPivotGridField
-          Tag = 3
-          AreaIndex = 1
-          IsCaptionAssigned = True
-          Caption = 'Car Name'
-          DataBinding.ValueType = 'String'
-          Visible = True
-        end
-        object pgfUnitPrice: TcxPivotGridField
-          Tag = 4
-          AreaIndex = 0
-          IsCaptionAssigned = True
-          Caption = 'Unit Price'
-          DataBinding.ValueType = 'Currency'
-          Visible = True
-        end
-        object pgfCompanyName: TcxPivotGridField
-          Tag = 5
-          Area = faRow
-          AreaIndex = 1
-          IsCaptionAssigned = True
-          Caption = 'Company Name'
-          DataBinding.ValueType = 'String'
-          Visible = True
-          Width = 90
-        end
-        object pgfPaymentAmount: TcxPivotGridField
-          Tag = 6
-          Area = faData
-          AreaIndex = 1
-          IsCaptionAssigned = True
-          Caption = 'Payment Amount'
-          DataBinding.ValueType = 'Currency'
-          Visible = True
-        end
-      end
-    end
     object tsScheduler: TcxTabSheet
       Caption = 'Scheduler'
       ImageIndex = 6
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
       object Scheduler: TcxScheduler
         Left = 0
         Top = 0
@@ -22335,8 +21832,6 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
-        ExplicitWidth = 856
-        ExplicitHeight = 420
         Splitters = {
           C70200007E0000005603000083000000C202000001000000C70200009F010000}
         StoredClientBounds = {0100000001000000560300009F010000}
@@ -22348,7 +21843,6 @@ object FMenu: TFMenu
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 288
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -22400,251 +21894,9 @@ object FMenu: TFMenu
         end
       end
     end
-    object tsTreeList: TcxTabSheet
-      Caption = 'TreeList'
-      ImageIndex = 1
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
-      object cxTreeList1: TcxTreeList
-        Left = 0
-        Top = 0
-        Width = 855
-        Height = 416
-        Align = alClient
-        Bands = <
-          item
-            Width = 527
-          end
-          item
-          end>
-        OptionsView.Bands = True
-        OptionsView.CategorizedColumn = cxTreeList1cxTreeListColumn2
-        OptionsView.Footer = True
-        OptionsView.Indicator = True
-        Preview.Column = cxTreeList1cxTreeListColumn2
-        TabOrder = 0
-        ExplicitWidth = 856
-        ExplicitHeight = 420
-        Data = {
-          00000500720200000F00000044617461436F6E74726F6C6C6572310400000012
-          000000546378537472696E6756616C7565547970651200000054637853747269
-          6E6756616C75655479706512000000546378537472696E6756616C7565547970
-          6512000000546378537472696E6756616C75655479706505000000445855464D
-          540000040000004900740065006D00010008000000560061006C007500650020
-          0023003100000A000000530075006200560061006C0075006500200031004458
-          55464D540000070000005300750062004900740065006D000100080000005600
-          61006C0075006500200023003200000A000000530075006200560061006C0075
-          00650020003200445855464D540000070000005300750062004900740065006D
-          00010008000000560061006C0075006500200023003300000A00000053007500
-          6200560061006C007500650020003300445855464D5400000600000049007400
-          65006D0020003200010008000000560061006C0075006500200023003400000A
-          000000530075006200560061006C007500650020003400445855464D54000006
-          0000004900740065006D0020003300010008000000560061006C007500650020
-          0023003500000A000000530075006200560061006C0075006500200035000300
-          0000000000000200010000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF
-          010000000200010000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF0200
-          000008000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF0300000008000000
-          000000000000FFFFFFFFFFFFFFFFFFFFFFFF0400000008000000000000000000
-          FFFFFFFFFFFFFFFFFFFFFFFF1A0003000000}
-        object cxTreeList1cxTreeListColumn1: TcxTreeListColumn
-          Caption.AlignVert = vaCenter
-          Caption.Text = 'Column # 1'
-          DataBinding.ValueType = 'String'
-          Width = 140
-          Position.ColIndex = 0
-          Position.RowIndex = 0
-          Position.BandIndex = 0
-          Summary.FooterSummaryItems = <
-            item
-              Kind = skCount
-            end>
-          Summary.GroupFooterSummaryItems = <>
-        end
-        object cxTreeList1cxTreeListColumn2: TcxTreeListColumn
-          DataBinding.ValueType = 'String'
-          Position.ColIndex = 1
-          Position.RowIndex = 0
-          Position.BandIndex = 0
-          Summary.FooterSummaryItems = <>
-          Summary.GroupFooterSummaryItems = <>
-        end
-        object cxTreeList1cxTreeListColumn3: TcxTreeListColumn
-          Caption.AlignHorz = taCenter
-          Caption.AlignVert = vaCenter
-          Caption.GlyphAlignHorz = taCenter
-          Caption.GlyphAlignVert = vaCenter
-          Caption.Text = 'Column'
-          DataBinding.ValueType = 'String'
-          Width = 153
-          Position.ColIndex = 2
-          Position.RowIndex = 0
-          Position.BandIndex = 0
-          Summary.FooterSummaryItems = <
-            item
-              Kind = skCount
-            end>
-          Summary.GroupFooterSummaryItems = <>
-        end
-        object cxTreeList1cxTreeListColumn4: TcxTreeListColumn
-          Caption.AlignHorz = taRightJustify
-          Caption.AlignVert = vaCenter
-          Caption.Text = 'Column # 2'
-          DataBinding.ValueType = 'String'
-          Width = 157
-          Position.ColIndex = 3
-          Position.RowIndex = 0
-          Position.BandIndex = 0
-          Summary.FooterSummaryItems = <>
-          Summary.GroupFooterSummaryItems = <>
-        end
-      end
-    end
-    object tsVerticalGrid: TcxTabSheet
-      Caption = 'VerticalGrid'
-      ImageIndex = 2
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
-      object cxVerticalGrid: TcxVerticalGrid
-        Left = 0
-        Top = 0
-        Width = 855
-        Height = 416
-        Align = alClient
-        OptionsView.BandsInterval = 3
-        OptionsView.RowHeaderWidth = 146
-        TabOrder = 0
-        ExplicitWidth = 856
-        ExplicitHeight = 420
-        Version = 1
-        object cxVerticalGridEditorRow1: TcxEditorRow
-          Properties.Caption = 'Caption'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 0
-          ParentID = -1
-          Index = 0
-          Version = 1
-        end
-        object cxVerticalGridCategoryRow1: TcxCategoryRow
-          Properties.Caption = 'Category'
-          Properties.ImageIndex = 0
-          ID = 1
-          ParentID = -1
-          Index = 1
-          Version = 1
-        end
-        object cxVerticalGridEditorRow2: TcxEditorRow
-          Expanded = False
-          Properties.Caption = 'Test'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 2
-          ParentID = 1
-          Index = 0
-          Version = 1
-        end
-        object cxVerticalGridEditorRow5: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.ImageIndex = 1
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 3
-          ParentID = 2
-          Index = 0
-          Version = 1
-        end
-        object cxVerticalGridEditorRow3: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 4
-          ParentID = 2
-          Index = 1
-          Version = 1
-        end
-        object cxVerticalGridCategoryRow2: TcxCategoryRow
-          Properties.Caption = 'SubCategory'
-          ID = 5
-          ParentID = 1
-          Index = 1
-          Version = 1
-        end
-        object cxVerticalGridEditorRow9: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 6
-          ParentID = 5
-          Index = 0
-          Version = 1
-        end
-        object cxVerticalGridEditorRow7: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 7
-          ParentID = 5
-          Index = 1
-          Version = 1
-        end
-        object cxVerticalGridEditorRow6: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 8
-          ParentID = 5
-          Index = 2
-          Version = 1
-        end
-        object cxVerticalGridEditorRow4: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 9
-          ParentID = 5
-          Index = 3
-          Version = 1
-        end
-        object cxVerticalGridEditorRow8: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 10
-          ParentID = 1
-          Index = 2
-          Version = 1
-        end
-        object cxVerticalGridEditorRow10: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 11
-          ParentID = -1
-          Index = 2
-          Version = 1
-        end
-        object cxVerticalGridEditorRow11: TcxEditorRow
-          Properties.Caption = 'Item'
-          Properties.DataBinding.ValueType = 'String'
-          Properties.Value = Null
-          ID = 12
-          ParentID = -1
-          Index = 3
-          Version = 1
-        end
-      end
-    end
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
@@ -22653,8 +21905,6 @@ object FMenu: TFMenu
         Align = alClient
         TabOrder = 0
         TabStop = False
-        ExplicitWidth = 856
-        ExplicitHeight = 420
         object Image1: TImage
           Left = 364
           Top = 129
@@ -23637,10 +22887,6 @@ object FMenu: TFMenu
     object tsEditors: TcxTabSheet
       Caption = 'Editors'
       ImageIndex = 5
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
       object cxCheckGroup1: TcxCheckGroup
         Left = 8
         Top = 8
@@ -23868,10 +23114,6 @@ object FMenu: TFMenu
     object cxTabSheet1: TcxTabSheet
       Caption = 'Docking && NavBar'
       ImageIndex = 7
-      ExplicitLeft = 4
-      ExplicitTop = 33
-      ExplicitWidth = 856
-      ExplicitHeight = 420
       DesignSize = (
         855
         416)
@@ -23881,8 +23123,6 @@ object FMenu: TFMenu
         Width = 855
         Height = 416
         Align = alClient
-        ExplicitWidth = 856
-        ExplicitHeight = 420
         DockType = 0
         OriginalWidth = 855
         OriginalHeight = 416
@@ -23942,15 +23182,13 @@ object FMenu: TFMenu
             object dxNavPane: TdxNavBar
               Left = 0
               Top = 0
-              Width = 167
-              Height = 0
+              Width = 173
+              Height = 140
               Align = alClient
               ActiveGroupIndex = 0
               TabOrder = 0
               View = 14
               OptionsImage.SmallImages = cxImageList1
-              ExplicitWidth = 173
-              ExplicitHeight = 140
               object dxNavBarGroup4: TdxNavBarGroup
                 Caption = 'Documents'
                 LargeImageIndex = 1
@@ -24060,8 +23298,6 @@ object FMenu: TFMenu
             TabOrder = 0
             View = 15
             OptionsImage.SmallImages = cxImageList1
-            ExplicitWidth = 169
-            ExplicitHeight = 392
             object dxNavBarGroup1: TdxNavBarGroup
               Caption = 'Documents'
               LargeImageIndex = 1
@@ -24421,40 +23657,6 @@ object FMenu: TFMenu
       Row = 0
       UseOwnFont = False
       Visible = False
-      WholeRow = False
-    end
-    object tbLinks: TdxBar
-      Caption = 'Links'
-      CaptionButtons = <>
-      DockedLeft = 0
-      DockedTop = 0
-      FloatLeft = 127
-      FloatTop = 158
-      FloatClientWidth = 0
-      FloatClientHeight = 0
-      ItemLinks = <
-        item
-          Visible = True
-          ItemName = 'btnOnTheWeb'
-        end
-        item
-          BeginGroup = True
-          Position = ipBeginsNewColumn
-          Visible = True
-          ItemName = 'dxBarButton3'
-        end
-        item
-          Visible = True
-          ItemName = 'dxBarButton2'
-        end
-        item
-          Visible = True
-          ItemName = 'dxBarButton4'
-        end>
-      OneOnRow = True
-      Row = 0
-      UseOwnFont = False
-      Visible = True
       WholeRow = False
     end
     object dxbFile: TdxBarSubItem
@@ -28239,7 +27441,7 @@ object FMenu: TFMenu
     Left = 624
     Top = 32
     Bitmap = {
-      494C01010200040030005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010200040034005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006801000020000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000EEE9E600413A35001A14
