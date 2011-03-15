@@ -17,32 +17,13 @@ type
     EditRepositoryPrice: TcxEditRepositoryCurrencyItem;
     EditRepositoryFuelEconomy: TcxEditRepositoryTextItem;
     EditRepositoryAutomatic: TcxEditRepositoryCheckBoxItem;
-    dsCars: TDataSource;
-    mdsCars: TdxMemData;
-    mdsCarsID: TAutoIncField;
-    mdsCarsTrademark: TStringField;
-    mdsCarsModel: TStringField;
-    mdsCarsHP: TSmallintField;
-    mdsCarsLiter: TFloatField;
-    mdsCarsCyl: TSmallintField;
-    mdsCarsTransmissSpeedCount: TSmallintField;
-    mdsCarsTransmissAutomatic: TStringField;
-    mdsCarsMPG_City: TSmallintField;
-    mdsCarsMPG_Highway: TSmallintField;
-    mdsCarsCategory: TStringField;
-    mdsCarsDescription: TMemoField;
-    mdsCarsHyperlink: TStringField;
-    mdsCarsPicture: TBlobField;
-    mdsCarsPrice: TFloatField;
     cxSchedulerHolidays1: TcxSchedulerHolidays;
     KDConnection: TSQLConnection;
     TUsuario: TSQLQuery;
     TUsuarioID_USUARIO: TIntegerField;
     TUsuarioLOGIN: TStringField;
     TUsuarioSENHA: TStringField;
-    TAgenda: TSQLQuery;
-    TAgendaCOD_AGENDA: TIntegerField;
-    TAgendaAGENDA: TBlobField;
+    DSUsuario: TDataSource;
   private
     { Private declarations }
   public

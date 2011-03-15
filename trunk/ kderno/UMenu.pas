@@ -33,7 +33,8 @@ uses
   dxSkinsdxNavBar2Painter, dxSkinsForm, dxSkinsdxDockControlPainter, dxSkinsdxBarPainter,
   dxSkinsdxRibbonPainter, dxSkinscxSchedulerPainter,
   dxSkinscxScheduler3Painter, cxDWMApi,
-  dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu;
+  dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu, IdBaseComponent, IdScheduler,
+  IdSchedulerOfThread, IdSchedulerOfThreadDefault;
 
 type
   TFMenu = class(TdxRibbonForm, IcxLookAndFeelNotificationListener)
@@ -211,6 +212,7 @@ type
     btnDisableAero: TdxBarButton;
     PopupMenu1: TPopupMenu;
     Mudardesign1: TMenuItem;
+    IdSchedulerOfThreadDefault1: TIdSchedulerOfThreadDefault;
     procedure tbVerticalPropertiesChange(Sender: TObject);
     procedure tbHorizontalPropertiesChange(Sender: TObject);
     procedure dxbExitClick(Sender: TObject);
