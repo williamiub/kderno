@@ -21768,7 +21768,6 @@ object FMenu: TFMenu
     TabOrder = 1
     TabStop = False
     object dxRibbonTab1: TdxRibbonTab
-      Active = True
       Caption = 'Standard'
       Groups = <
         item
@@ -21783,6 +21782,7 @@ object FMenu: TFMenu
       Index = 0
     end
     object dxRibbonTab2: TdxRibbonTab
+      Active = True
       Caption = 'Style Options'
       Groups = <
         item
@@ -21804,18 +21804,22 @@ object FMenu: TFMenu
     Images = ilGroupIcons
     PopupMenu = PopupMenu1
     TabOrder = 6
-    ClientRectBottom = 451
-    ClientRectLeft = 3
-    ClientRectRight = 858
-    ClientRectTop = 35
+    ClientRectBottom = 453
+    ClientRectLeft = 4
+    ClientRectRight = 860
+    ClientRectTop = 33
     object tsScheduler: TcxTabSheet
       Caption = 'Scheduler'
       ImageIndex = 6
+      ExplicitLeft = 3
+      ExplicitTop = 35
+      ExplicitWidth = 855
+      ExplicitHeight = 416
       object Scheduler: TcxScheduler
         Left = 0
         Top = 0
-        Width = 855
-        Height = 416
+        Width = 856
+        Height = 420
         ViewDay.Active = True
         Align = alClient
         ControlBox.Control = ControlBox
@@ -21832,17 +21836,20 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
+        ExplicitWidth = 855
+        ExplicitHeight = 416
         Splitters = {
-          C70200007E0000005603000083000000C202000001000000C70200009F010000}
-        StoredClientBounds = {0100000001000000560300009F010000}
+          C80200007E0000005703000083000000C302000001000000C8020000A3010000}
+        StoredClientBounds = {010000000100000057030000A3010000}
         object ControlBox: TPanel
           Left = 0
           Top = 0
           Width = 143
-          Height = 284
+          Height = 288
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
+          ExplicitHeight = 284
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -21897,14 +21904,20 @@ object FMenu: TFMenu
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
+      ExplicitLeft = 3
+      ExplicitTop = 35
+      ExplicitWidth = 855
+      ExplicitHeight = 416
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
-        Width = 855
-        Height = 416
+        Width = 856
+        Height = 420
         Align = alClient
         TabOrder = 0
         TabStop = False
+        ExplicitWidth = 855
+        ExplicitHeight = 416
         object Image1: TImage
           Left = 364
           Top = 129
@@ -22887,6 +22900,10 @@ object FMenu: TFMenu
     object tsEditors: TcxTabSheet
       Caption = 'Editors'
       ImageIndex = 5
+      ExplicitLeft = 3
+      ExplicitTop = 35
+      ExplicitWidth = 855
+      ExplicitHeight = 416
       object cxCheckGroup1: TcxCheckGroup
         Left = 8
         Top = 8
@@ -23114,39 +23131,45 @@ object FMenu: TFMenu
     object cxTabSheet1: TcxTabSheet
       Caption = 'Docking && NavBar'
       ImageIndex = 7
+      ExplicitLeft = 3
+      ExplicitTop = 35
+      ExplicitWidth = 855
+      ExplicitHeight = 416
       DesignSize = (
-        855
-        416)
+        856
+        420)
       object dxDockSite: TdxDockSite
         Left = 0
         Top = 0
-        Width = 855
-        Height = 416
+        Width = 856
+        Height = 420
         Align = alClient
+        ExplicitWidth = 855
+        ExplicitHeight = 416
         DockType = 0
-        OriginalWidth = 855
-        OriginalHeight = 416
+        OriginalWidth = 856
+        OriginalHeight = 420
         object dxLayoutDockSite4: TdxLayoutDockSite
           Left = 173
           Top = 0
-          Width = 654
-          Height = 416
+          Width = 655
+          Height = 420
           DockType = 1
           OriginalWidth = 300
           OriginalHeight = 200
           object dxLayoutDockSite1: TdxLayoutDockSite
             Left = 0
             Top = 0
-            Width = 654
-            Height = 416
+            Width = 655
+            Height = 420
             DockType = 1
             OriginalWidth = 300
             OriginalHeight = 200
             object dxLayoutDockSite3: TdxLayoutDockSite
               Left = 0
               Top = 0
-              Width = 654
-              Height = 416
+              Width = 655
+              Height = 420
               DockType = 1
               OriginalWidth = 300
               OriginalHeight = 200
@@ -23154,8 +23177,8 @@ object FMenu: TFMenu
             object dxDockMainPanel: TdxDockPanel
               Left = 0
               Top = 0
-              Width = 654
-              Height = 416
+              Width = 655
+              Height = 420
               AllowFloating = True
               AutoHide = False
               Caption = 'Main'
@@ -23170,7 +23193,7 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 173
-            Height = 0
+            Height = 4
             Visible = False
             AllowFloating = True
             AutoHide = True
@@ -23182,13 +23205,15 @@ object FMenu: TFMenu
             object dxNavPane: TdxNavBar
               Left = 0
               Top = 0
-              Width = 173
-              Height = 140
+              Width = 169
+              Height = 0
               Align = alClient
               ActiveGroupIndex = 0
               TabOrder = 0
               View = 14
               OptionsImage.SmallImages = cxImageList1
+              ExplicitWidth = 173
+              ExplicitHeight = 140
               object dxNavBarGroup4: TdxNavBarGroup
                 Caption = 'Documents'
                 LargeImageIndex = 1
@@ -23281,7 +23306,7 @@ object FMenu: TFMenu
           Left = 0
           Top = 0
           Width = 173
-          Height = 416
+          Height = 420
           AllowFloating = True
           AutoHide = False
           Caption = 'NavBar: NavPane View'
@@ -23291,13 +23316,15 @@ object FMenu: TFMenu
           object dxNavBar: TdxNavBar
             Left = 0
             Top = 0
-            Width = 167
-            Height = 381
+            Width = 169
+            Height = 392
             Align = alClient
             ActiveGroupIndex = 0
             TabOrder = 0
             View = 15
             OptionsImage.SmallImages = cxImageList1
+            ExplicitWidth = 167
+            ExplicitHeight = 381
             object dxNavBarGroup1: TdxNavBarGroup
               Caption = 'Documents'
               LargeImageIndex = 1
@@ -25536,6 +25563,7 @@ object FMenu: TFMenu
     Top = 33
   end
   object dxSkinController: TdxSkinController
+    NativeStyle = True
     SkinName = 'UserSkin'
     OnSkinForm = dxSkinControllerSkinForm
     Left = 858
@@ -28953,5 +28981,10 @@ object FMenu: TFMenu
       Caption = 'Mudar design'
       OnClick = Mudardesign1Click
     end
+  end
+  object IdSchedulerOfThreadDefault1: TIdSchedulerOfThreadDefault
+    MaxThreads = 0
+    Left = 504
+    Top = 64
   end
 end

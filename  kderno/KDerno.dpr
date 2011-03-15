@@ -15,9 +15,10 @@ uses
 begin
   Application.Initialize;
   Application.Title := 'KDerno';
-  Application.CreateForm(TFMenu, FMenu);
   Application.CreateForm(TFLogin, FLogin);
+  Application.CreateForm(TFMenu, FMenu);
   Application.CreateForm(TFSplash, FSplash);
+  Application.CreateForm(TDmKderno, DmKderno);
   FMenu.SkinSelectorVisible := True;
   FMenu.Caption := 'KDerno';
   Application.Run;
