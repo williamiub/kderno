@@ -5,7 +5,8 @@ interface
 uses
   SysUtils, Classes, DB, cxEditRepositoryItems, cxEdit, ImgList,
   Controls, cxGraphics, dxSkinsCore, dxmdaset, cxSchedulerHolidays, DBXFirebird,
-  FMTBcd, SqlExpr;
+  FMTBcd, SqlExpr, IBCustomDataSet, IBTable, IBQuery, IBDatabase, ExtCtrls,
+  Provider, DBClient;
 
 type
   TDmKderno = class(TDataModule)
@@ -18,9 +19,8 @@ type
     EditRepositoryFuelEconomy: TcxEditRepositoryTextItem;
     EditRepositoryAutomatic: TcxEditRepositoryCheckBoxItem;
     cxSchedulerHolidays1: TcxSchedulerHolidays;
-    KDConnection: TSQLConnection;
+    KDernoConection: TSQLConnection;
     TUsuario: TSQLQuery;
-    TUsuarioID_USUARIO: TIntegerField;
     TUsuarioLOGIN: TStringField;
     TUsuarioSENHA: TStringField;
     DSUsuario: TDataSource;
@@ -34,6 +34,8 @@ var
   DmKderno: TDmKderno;
 
 implementation
+
+uses ULogin;
 
 {$R *.dfm}
 

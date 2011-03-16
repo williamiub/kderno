@@ -2,7 +2,7 @@ object FSplash: TFSplash
   Left = 314
   Top = 233
   BorderStyle = bsNone
-  ClientHeight = 226
+  ClientHeight = 225
   ClientWidth = 385
   Color = clFuchsia
   TransparentColorValue = clFuchsia
@@ -111,7 +111,7 @@ object FSplash: TFSplash
       6CFC79EAF3F9E9829FA57FAE7EA1FBE2BB5F1C7FE99B593533FE92FF72E1D7E2
       57F2AF8EBC5EF6BA7BD67FF6F19BE437F373856FE5DF1E7DC778D7FB3EECFDC4
       7CE607EC878A8F7A1FBB3E797F7AB890BCB0F01BF784F3FB32FAF07100000009
-      7048597300000EBE00000EBE01EA42B1C00000F55349444154785EECFD779C64
+      7048597300000EBD00000EBD0147FB90AD0000F55349444154785EECFD779C64
       45D9FE8F6F774F4FEA99D940DE9C730E33BB3B61F32E390751312B5940411014
       C9391B411014512429E69C136641C0ECA33EFAC44FFC7E7FDF7FEB77DD55759F
       BE4F75D5093D3D1BCF1FF53AE754D5A9EEE9393BFDDEEBBEEEBBC6BDFEAAC7D4
@@ -4138,15 +4138,6 @@ object FSplash: TFSplash
     ParentFont = False
     Transparent = True
   end
-  object Shape2: TShape
-    Left = 8
-    Top = 184
-    Width = 309
-    Height = 10
-    Brush.Color = clCream
-    Pen.Color = clInactiveCaption
-    Pen.Width = 3
-  end
   object LSimple01: TLabel
     Left = 8
     Top = 162
@@ -4160,14 +4151,6 @@ object FSplash: TFSplash
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
     Transparent = True
-  end
-  object Shape1: TShape
-    Left = 8
-    Top = 180
-    Width = 309
-    Height = 2
-    Pen.Color = clGradientInactiveCaption
-    Pen.Width = 2
   end
   object Image1: TImage
     Left = 323
@@ -9343,24 +9326,6 @@ object FSplash: TFSplash
     ParentColor = False
     OnClick = FlatSpeedButton2Click
   end
-  object SPProgress: TShape
-    Left = 13
-    Top = 187
-    Width = 0
-    Height = 3
-    Brush.Color = clYellow
-    Pen.Color = clYellow
-    Pen.Width = 3
-  end
-  object SPProgress2: TShape
-    Left = 13
-    Top = 187
-    Width = 0
-    Height = 3
-    Brush.Color = clYellow
-    Pen.Color = clMoneyGreen
-    Pen.Width = 3
-  end
   object Image6: TImage
     Left = 146
     Top = 136
@@ -11038,5 +11003,36 @@ object FSplash: TFSplash
       D93D232B9E83930000000049454E44AE426082}
     Stretch = True
     Transparent = True
+  end
+  object SPProgress: TcxProgressBar
+    Left = 8
+    Top = 179
+    ParentCustomHint = False
+    AutoSize = False
+    ParentFont = False
+    ParentShowHint = False
+    Properties.BarStyle = cxbsAnimation
+    Properties.BeginColor = clAqua
+    Properties.PeakValue = 50.000000000000000000
+    Properties.ShowText = False
+    Properties.ShowTextStyle = cxtsText
+    ShowHint = False
+    Style.LookAndFeel.Kind = lfUltraFlat
+    Style.LookAndFeel.NativeStyle = False
+    Style.Shadow = True
+    StyleDisabled.LookAndFeel.Kind = lfUltraFlat
+    StyleDisabled.LookAndFeel.NativeStyle = False
+    StyleFocused.LookAndFeel.Kind = lfUltraFlat
+    StyleFocused.LookAndFeel.NativeStyle = False
+    StyleHot.BorderStyle = ebs3D
+    StyleHot.LookAndFeel.Kind = lfUltraFlat
+    StyleHot.LookAndFeel.NativeStyle = False
+    TabOrder = 0
+    Height = 20
+    Width = 325
+  end
+  object ApplicationEvents1: TApplicationEvents
+    Left = 72
+    Top = 48
   end
 end
