@@ -13522,6 +13522,7 @@ object FMenu: TFMenu
     32323534}
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnClose = FormClose
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -21811,10 +21812,6 @@ object FMenu: TFMenu
     object tsScheduler: TcxTabSheet
       Caption = 'Scheduler'
       ImageIndex = 6
-      ExplicitLeft = 3
-      ExplicitTop = 35
-      ExplicitWidth = 855
-      ExplicitHeight = 416
       object Scheduler: TcxScheduler
         Left = 0
         Top = 0
@@ -21836,8 +21833,6 @@ object FMenu: TFMenu
         ResourceNavigator.Visibility = snvAlways
         Storage = SchedulerStorage
         TabOrder = 0
-        ExplicitWidth = 855
-        ExplicitHeight = 416
         Splitters = {
           C80200007E0000005703000083000000C302000001000000C8020000A3010000}
         StoredClientBounds = {010000000100000057030000A3010000}
@@ -21849,7 +21844,6 @@ object FMenu: TFMenu
           Align = alClient
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 284
           object rgGroupBy: TcxRadioGroup
             Left = 0
             Top = 119
@@ -21904,10 +21898,6 @@ object FMenu: TFMenu
     object tsLayoutControl: TcxTabSheet
       Caption = 'LayoutControl'
       ImageIndex = 3
-      ExplicitLeft = 3
-      ExplicitTop = 35
-      ExplicitWidth = 855
-      ExplicitHeight = 416
       object lcMain: TdxLayoutControl
         Left = 0
         Top = 0
@@ -21916,8 +21906,6 @@ object FMenu: TFMenu
         Align = alClient
         TabOrder = 0
         TabStop = False
-        ExplicitWidth = 855
-        ExplicitHeight = 416
         object Image1: TImage
           Left = 364
           Top = 129
@@ -22900,10 +22888,6 @@ object FMenu: TFMenu
     object tsEditors: TcxTabSheet
       Caption = 'Editors'
       ImageIndex = 5
-      ExplicitLeft = 3
-      ExplicitTop = 35
-      ExplicitWidth = 855
-      ExplicitHeight = 416
       object cxCheckGroup1: TcxCheckGroup
         Left = 8
         Top = 8
@@ -23131,10 +23115,6 @@ object FMenu: TFMenu
     object cxTabSheet1: TcxTabSheet
       Caption = 'Docking && NavBar'
       ImageIndex = 7
-      ExplicitLeft = 3
-      ExplicitTop = 35
-      ExplicitWidth = 855
-      ExplicitHeight = 416
       DesignSize = (
         856
         420)
@@ -23144,8 +23124,6 @@ object FMenu: TFMenu
         Width = 856
         Height = 420
         Align = alClient
-        ExplicitWidth = 855
-        ExplicitHeight = 416
         DockType = 0
         OriginalWidth = 856
         OriginalHeight = 420
@@ -23193,7 +23171,7 @@ object FMenu: TFMenu
             Left = 0
             Top = 0
             Width = 173
-            Height = 4
+            Height = 0
             Visible = False
             AllowFloating = True
             AutoHide = True
@@ -23205,15 +23183,13 @@ object FMenu: TFMenu
             object dxNavPane: TdxNavBar
               Left = 0
               Top = 0
-              Width = 169
-              Height = 0
+              Width = 173
+              Height = 140
               Align = alClient
               ActiveGroupIndex = 0
               TabOrder = 0
               View = 14
               OptionsImage.SmallImages = cxImageList1
-              ExplicitWidth = 173
-              ExplicitHeight = 140
               object dxNavBarGroup4: TdxNavBarGroup
                 Caption = 'Documents'
                 LargeImageIndex = 1
@@ -23323,8 +23299,6 @@ object FMenu: TFMenu
             TabOrder = 0
             View = 15
             OptionsImage.SmallImages = cxImageList1
-            ExplicitWidth = 167
-            ExplicitHeight = 381
             object dxNavBarGroup1: TdxNavBarGroup
               Caption = 'Documents'
               LargeImageIndex = 1
@@ -27469,7 +27443,7 @@ object FMenu: TFMenu
     Left = 624
     Top = 32
     Bitmap = {
-      494C01010200040034005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010200040040005A002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       00000000000036000000280000006801000020000000010020000000000000B4
       0000000000000000000000000000000000000000000000000000000000000000
       00000000000000000000000000000000000000000000EEE9E600413A35001A14
@@ -28982,9 +28956,16 @@ object FMenu: TFMenu
       OnClick = Mudardesign1Click
     end
   end
-  object IdSchedulerOfThreadDefault1: TIdSchedulerOfThreadDefault
-    MaxThreads = 0
-    Left = 504
-    Top = 64
+  object DFTrayIcon1: TDFTrayIcon
+    Active = True
+    Animate = False
+    HideAppOnMinimize = True
+    ShortCut = 0
+    ShowAtDesignTime = False
+    ShowHint = False
+    ShowOnClick = True
+    UseAppIcon = True
+    Left = 560
+    Top = 32
   end
 end

@@ -34,7 +34,7 @@ uses
   dxSkinsdxRibbonPainter, dxSkinscxSchedulerPainter,
   dxSkinscxScheduler3Painter, cxDWMApi,
   dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu, IdBaseComponent, IdScheduler,
-  IdSchedulerOfThread, IdSchedulerOfThreadDefault;
+  IdSchedulerOfThread, IdSchedulerOfThreadDefault, DFTrayIcon;
 
 type
   TFMenu = class(TdxRibbonForm, IcxLookAndFeelNotificationListener)
@@ -212,7 +212,7 @@ type
     btnDisableAero: TdxBarButton;
     PopupMenu1: TPopupMenu;
     Mudardesign1: TMenuItem;
-    IdSchedulerOfThreadDefault1: TIdSchedulerOfThreadDefault;
+    DFTrayIcon1: TDFTrayIcon;
     procedure tbVerticalPropertiesChange(Sender: TObject);
     procedure tbHorizontalPropertiesChange(Sender: TObject);
     procedure dxbExitClick(Sender: TObject);
@@ -232,6 +232,7 @@ type
     procedure btnDisableAeroClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Mudardesign1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     FLayoutSkinLookAndFeel: TdxLayoutSkinLookAndFeel;
     FResNames: TStringList;
@@ -513,8 +514,24 @@ begin
       (AForm is TcxSchedulerEventEditor);
 end;
 
+procedure TFMenu.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+   try
+        SchedulerStorage.SaveToFile('\Data\Base');
+   except on E: Exception do
+      ShowMessage('Falha ao gravar dados, provavelmente você não tem permissão de escrita no local desejado');
+   end;
+   
+end;
+
 procedure TFMenu.FormCreate(Sender: TObject);
 begin
+ try
+ SchedulerStorage.SaveToFile('\Data\Base');
+   except
+
+   end;
+
   if IsCompositionEnabled then
     btnDisableAero.Visible := ivAlways
   else

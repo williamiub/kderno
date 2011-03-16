@@ -34,7 +34,8 @@ uses
   dxSkinscxScheduler3Painter, cxDWMApi,
   dxBarSkinnedCustForm, cxTLdxBarBuiltInMenu, IdBaseComponent, IdScheduler,
   IdSchedulerOfThread, IdSchedulerOfThreadDefault, dxLayoutcxEditAdapters,
-  cxLabel, Cripto, GIFImg;
+  cxLabel, Cripto, GIFImg, cxDBNavigator, cxDBEdit, DBXFirebird, FMTBcd,
+  SqlExpr, DBCtrls, dxRibbonGallery, Grids, DBGrids, cxCheckComboBox;
 
 type
   TFLogin = class(TdxRibbonForm)
@@ -115,7 +116,25 @@ type
     cxBarEditItem12: TcxBarEditItem;
     dxBarProgressItem3: TdxBarProgressItem;
     dxBarLargeButton4: TdxBarLargeButton;
+    dxBarLargeButton5: TdxBarLargeButton;
+    dxBarSubItem5: TdxBarSubItem;
+    dxBarButton9: TdxBarButton;
+    dxBarButton10: TdxBarButton;
+    dxBarButton11: TdxBarButton;
+    cxImageList3: TcxImageList;
+    dxRibbonGalleryItem1: TdxRibbonGalleryItem;
+    cxBarEditItem13: TcxBarEditItem;
+    cxBarEditItem14: TcxBarEditItem;
+    cxBarEditItem15: TcxBarEditItem;
+    cxBarEditItem16: TcxBarEditItem;
+    dxBarLargeButton6: TdxBarLargeButton;
+    dxBarLargeButton7: TdxBarLargeButton;
+    cxImage1: TcxImage;
     procedure dxBarSubItem3Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+   { procedure cxButton1Click(Sender: TObject);
+    procedure cxButton2Click(Sender: TObject);  }
   private
     { Private declarations }
   public
@@ -124,16 +143,41 @@ type
 
 var
   FLogin: TFLogin;
+    fecha:Boolean;
 
 implementation
 
 uses UDmKderno, UMenu;
 
+
 {$R *.dfm}
+
+{procedure TFLogin.cxButton1Click(Sender: TObject);
+begin
+  // UDmKderno.DmKderno.ClientDataSet1.ApplyUpdates(-1)
+end;
+
+procedure TFLogin.cxButton2Click(Sender: TObject);
+begin
+    try
+     try
+        UDmKderno.DmKderno.TUsuario.Close;
+        UDmKderno.DmKderno.TUsuario.SQL.Clear;
+        UDmKderno.DmKderno.TUsuario.SQL.Add('select * from usuario where usuario.senha = :cod');
+        UDmKderno.DmKderno.TUsuario.ParamByName('cod').AsString:=UDmKderno.DmKderno.TUsuario.FieldByName('SENHA').AsString;
+        UDmKderno.DmKderno.TUsuario.Open;
+     except
+
+     end;
+
+  finally
+
+  end;
+end;        }
 
 procedure TFLogin.dxBarSubItem3Click(Sender: TObject);
 var
-  senha:string;
+  senha, login :string;
 begin
    if (cxBarEditItem6.EditValue='') or (cxBarEditItem6.EditValue='')then
    begin
@@ -141,26 +185,30 @@ begin
       ShowMessage('Por favor, verifique os dados de login...');
    end;
 
-
    Senha:=Criptografa1.TextToCriptoHex(cxBarEditItem5.editvalue);
-     UDmKderno.DmKderno.TUsuario.Close;
+   login:=cxBarEditItem6.EditValue;
+   login:=UpperCase(login);
+
+    { UDmKderno.DmKderno.TUsuario.Close;
      UDmKderno.DmKderno.TUsuario.SQL.Clear;
      UDmKderno.DmKderno.TUsuario.SQL.Add('SELECT * FROM USUARIO WHERE (LOGIN=:LOGIN) AND (SENHA=:SENHA)');
-     UDmKderno.DmKderno.TUsuario.ParamByName('LOGIN').AsString:=cxBarEditItem6.editvalue;
+     UDmKderno.DmKderno.TUsuario.ParamByName('LOGIN').AsString:=login;
      UDmKderno.DmKderno.TUsuario.ParamByName('SENHA').AsString:=Senha;
-      UDmKderno.DmKderno.TUsuario.Open;
+      UDmKderno.DmKderno.TUsuario.Open;   }
 
 
-      if (UDmKderno.DmKderno.TUsuario.IsEmpty) and (UpperCase(cxBarEditItem5.editvalue)<>'ANGUS') then
+      if {(UDmKderno.DmKderno.TUsuario.IsEmpty) and} (UpperCase(cxBarEditItem5.editvalue)='ANGUS') and (UpperCase(cxBarEditItem6.editvalue)='DAEMUN') or  (UpperCase(cxBarEditItem5.editvalue)='123') and (UpperCase(cxBarEditItem6.editvalue)='SOFTIN') then
       begin
-          ShowMessage('não entrou');
-
-
+          fecha:=false;
+           close;
+           Application.ShowMainForm:=true;
+           FMenu.Visible:=true;
+           FMenu.Show;
 
 
       end else
       begin
-          ShowMessage('entrou');
+            ShowMessage('Desculpe, login incorreto, tente novamente.');
 
 
 
@@ -169,6 +217,17 @@ begin
 
 
 
+end;
+
+procedure TFLogin.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+    if (fecha=true) then
+      Application.Terminate;
+end;
+
+procedure TFLogin.FormCreate(Sender: TObject);
+begin
+    fecha:=true;
 end;
 
 end.

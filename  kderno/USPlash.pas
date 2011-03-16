@@ -5,24 +5,24 @@ interface
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   jpeg, ExtCtrls,  StdCtrls, Grids, DBGrids, OleCtrls, DrLabel, dxGDIPlusClasses,
-  TFlatButtonUnit, Buttons, TFlatSpeedButtonUnit;
+  TFlatButtonUnit, Buttons, TFlatSpeedButtonUnit, AppEvnts, cxGraphics,
+  cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxContainer, cxEdit,
+  cxProgressBar;
 
 type
   TFSplash = class(TForm)
     Label1: TLabel;
-    Shape2: TShape;
     ImgOrion: TImage;
     LSimple01: TLabel;
-    Shape1: TShape;
     Image1: TImage;
     Image2: TImage;
     Image3: TImage;
     Image5: TImage;
     FlatSpeedButton1: TFlatSpeedButton;
     FlatSpeedButton2: TFlatSpeedButton;
-    SPProgress: TShape;
-    SPProgress2: TShape;
     Image6: TImage;
+    ApplicationEvents1: TApplicationEvents;
+    SPProgress: TcxProgressBar;
     procedure FormCreate(Sender: TObject);
     procedure FlatSpeedButton2Click(Sender: TObject);
     procedure FlatSpeedButton1Click(Sender: TObject);
@@ -40,7 +40,7 @@ var
 
 implementation
 
-uses UMenu;
+uses UMenu, ULogin;
 
 
 
@@ -69,14 +69,11 @@ end;
 
 procedure TFSplash.FormShow(Sender: TObject);
 begin
-   { FSplash.SpProgress.Width:=FSplash.SpProgress.Width+32;
-     FSplash.SpProgress2.Width:=FSplash.SpProgress.Width;  }
-    { FSplash.SpProgress.Update;
-     FSplash.Update;
-     FSplash.SpProgress.Width:=FSplash.SpProgress.Width+20;
-     FSplash.SpProgress2.Width:=FSplash.SpProgress.Width-20; }
+
+
+
+     //Close;
+    // ULogin.FLogin.Visible:=true;
 end;
-
-
 
 end.

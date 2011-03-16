@@ -4,7 +4,7 @@ object DmKderno: TDmKderno
   Width = 768
   object imgBarsImages: TcxImageList
     FormatVersion = 1
-    DesignInfo = 1245800
+    DesignInfo = 24838792
     ImageInfo = <
       item
         Image.Data = {
@@ -782,8 +782,8 @@ object DmKderno: TDmKderno
       end>
   end
   object EditRepository: TcxEditRepository
-    Left = 684
-    Top = 76
+    Left = 706
+    Top = 380
     object EditRepositoryImage: TcxEditRepositoryImageItem
       Properties.GraphicClassName = 'TJPEGImage'
       Properties.PopupMenuLayout.CustomMenuItemCaption = '12312'
@@ -1483,10 +1483,10 @@ object DmKderno: TDmKderno
             Name = 'Presidents'#39' Day'
           end>
       end>
-    Left = 675
-    Top = 136
+    Left = 676
+    Top = 380
   end
-  object KDConnection: TSQLConnection
+  object KDernoConection: TSQLConnection
     ConnectionName = 'KDerno'
     DriverName = 'Firebird'
     GetDriverFunc = 'getSQLDriverINTERBASE'
@@ -1498,7 +1498,7 @@ object DmKderno: TDmKderno
       'rolename=RoleName'
       'user_name=sysdba'
       'password=masterkey'
-      'sqldialect=3'
+      'sqldialect=1'
       'localecode=0000'
       'blobsize=-1'
       'commitretain=False'
@@ -1508,20 +1508,17 @@ object DmKderno: TDmKderno
     VendorLib = 'fbclient.DLL'
     Connected = True
     Left = 32
-    Top = 16
+    Top = 8
   end
   object TUsuario: TSQLQuery
+    Active = True
     MaxBlobSize = -1
     Params = <>
     SQL.Strings = (
       'select * from usuario')
-    SQLConnection = KDConnection
-    Left = 32
-    Top = 104
-    object TUsuarioID_USUARIO: TIntegerField
-      FieldName = 'ID_USUARIO'
-      Required = True
-    end
+    SQLConnection = KDernoConection
+    Left = 56
+    Top = 72
     object TUsuarioLOGIN: TStringField
       FieldName = 'LOGIN'
       Required = True
@@ -1534,8 +1531,7 @@ object DmKderno: TDmKderno
     end
   end
   object DSUsuario: TDataSource
-    DataSet = TUsuario
-    Left = 32
-    Top = 152
+    Left = 96
+    Top = 72
   end
 end
